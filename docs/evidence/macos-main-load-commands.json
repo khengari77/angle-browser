@@ -1,0 +1,1274 @@
+{
+  "sha256": "25af5f4eaaae5aca25021f2737e90cc4d41fdf195c4a5c4012ea31a1bba4b86a",
+  "size": 166089936,
+  "slices": [
+    {
+      "architecture": "x86_64",
+      "offset": 16384,
+      "size": 86264624,
+      "commands": [
+        {
+          "command": "0x19",
+          "file_offset": 16416,
+          "size": 72
+        },
+        {
+          "command": "0x19",
+          "file_offset": 16488,
+          "size": 2312
+        },
+        {
+          "command": "0x19",
+          "file_offset": 18800,
+          "size": 952
+        },
+        {
+          "command": "0x19",
+          "file_offset": 19752,
+          "size": 1512
+        },
+        {
+          "command": "0x19",
+          "file_offset": 21264,
+          "size": 72
+        },
+        {
+          "command": "0x80000034",
+          "file_offset": 21336,
+          "size": 16
+        },
+        {
+          "command": "0x80000033",
+          "file_offset": 21352,
+          "size": 16
+        },
+        {
+          "command": "0x2",
+          "file_offset": 21368,
+          "size": 24
+        },
+        {
+          "command": "0xb",
+          "file_offset": 21392,
+          "size": 80
+        },
+        {
+          "command": "0xe",
+          "file_offset": 21472,
+          "size": 32
+        },
+        {
+          "command": "0x1b",
+          "file_offset": 21504,
+          "size": 24
+        },
+        {
+          "command": "0x32",
+          "file_offset": 21528,
+          "size": 32
+        },
+        {
+          "command": "0x2a",
+          "file_offset": 21560,
+          "size": 16
+        },
+        {
+          "command": "0x80000028",
+          "file_offset": 21576,
+          "size": 24
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21600,
+          "size": 48,
+          "name": "/usr/lib/libc++.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21648,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21736,
+          "size": 48,
+          "name": "/usr/lib/libz.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21784,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21896,
+          "size": 56,
+          "name": "/usr/lib/libxml2.2.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21952,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22048,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AVKit.framework/Versions/A/AVKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22136,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22232,
+          "size": 96,
+          "name": "@executable_path/../Frameworks/ArcCore.framework/Versions/A/ArcCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22328,
+          "size": 72,
+          "name": "@rpath/Lottie.framework/Versions/A/Lottie"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22400,
+          "size": 72,
+          "name": "@rpath/Sparkle.framework/Versions/B/Sparkle"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22472,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22568,
+          "size": 56,
+          "name": "/usr/lib/libobjc.A.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22624,
+          "size": 56,
+          "name": "/usr/lib/libSystem.B.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22680,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22776,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22880,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22976,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23072,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23160,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23248,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23344,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23448,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23552,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23648,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23752,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23848,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23952,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24048,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24144,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24240,
+          "size": 96,
+          "name": "/System/Library/Frameworks/GameplayKit.framework/Versions/A/GameplayKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24336,
+          "size": 88,
+          "name": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24424,
+          "size": 88,
+          "name": "/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24512,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24600,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 24696,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetricKit.framework/Versions/A/MetricKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24792,
+          "size": 104,
+          "name": "/System/Library/Frameworks/NaturalLanguage.framework/Versions/A/NaturalLanguage"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24896,
+          "size": 88,
+          "name": "/System/Library/Frameworks/PDFKit.framework/Versions/A/PDFKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24984,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25080,
+          "size": 120,
+          "name": "/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25200,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25296,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25408,
+          "size": 104,
+          "name": "/System/Library/Frameworks/ScriptingBridge.framework/Versions/A/ScriptingBridge"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25512,
+          "size": 88,
+          "name": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25600,
+          "size": 112,
+          "name": "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25712,
+          "size": 88,
+          "name": "/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25800,
+          "size": 56,
+          "name": "/usr/lib/libcompression.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 25856,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftAVFoundation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 25928,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftAccelerate.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 25992,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCompression.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26064,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCore.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26128,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreAudio.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26192,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26264,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreImage.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26328,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreLocation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26400,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26464,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreMedia.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26528,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftDarwin.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26592,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftDispatch.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26656,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftGLKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26720,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftGameplayKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26792,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftIOKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26856,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMapKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26920,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMetal.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 26984,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMetalKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27048,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftModelIO.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27112,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftNaturalLanguage.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27184,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftOSLog.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27248,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27312,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftQuartzCore.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27376,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftQuickLookUI.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27448,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftRegexBuilder.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27520,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSceneKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27584,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSpatial.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27648,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSpriteKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27712,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftSynchronization.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27784,
+          "size": 80,
+          "name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 27864,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftXPC.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 27928,
+          "size": 72,
+          "name": "/usr/lib/swift/libswift_Concurrency.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 28000,
+          "size": 72,
+          "name": "/usr/lib/swift/libswift_StringProcessing.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 28072,
+          "size": 56,
+          "name": "/usr/lib/swift/libswiftos.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 28128,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftsimd.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 28192,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftAppKit.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 28256,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 28328,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftNetwork.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 28392,
+          "size": 64,
+          "name": "@rpath/libswiftCompatibilitySpan.dylib"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 28456,
+          "size": 32,
+          "name": "/usr/lib/swift"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 28488,
+          "size": 48,
+          "name": "@executable_path/../Frameworks"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 28536,
+          "size": 40,
+          "name": "@loader_path/../Frameworks"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 28576,
+          "size": 40,
+          "name": "@executable_path/Frameworks"
+        },
+        {
+          "command": "0x26",
+          "file_offset": 28616,
+          "size": 16
+        },
+        {
+          "command": "0x29",
+          "file_offset": 28632,
+          "size": 16
+        },
+        {
+          "command": "0x1d",
+          "file_offset": 28648,
+          "size": 16,
+          "signature_offset": 85575328,
+          "signature_size": 689296
+        }
+      ]
+    },
+    {
+      "architecture": "arm64",
+      "offset": 86294528,
+      "size": 79795408,
+      "commands": [
+        {
+          "command": "0x19",
+          "file_offset": 86294560,
+          "size": 72
+        },
+        {
+          "command": "0x19",
+          "file_offset": 86294632,
+          "size": 2472
+        },
+        {
+          "command": "0x19",
+          "file_offset": 86297104,
+          "size": 952
+        },
+        {
+          "command": "0x19",
+          "file_offset": 86298056,
+          "size": 1352
+        },
+        {
+          "command": "0x19",
+          "file_offset": 86299408,
+          "size": 72
+        },
+        {
+          "command": "0x80000034",
+          "file_offset": 86299480,
+          "size": 16
+        },
+        {
+          "command": "0x80000033",
+          "file_offset": 86299496,
+          "size": 16
+        },
+        {
+          "command": "0x2",
+          "file_offset": 86299512,
+          "size": 24
+        },
+        {
+          "command": "0xb",
+          "file_offset": 86299536,
+          "size": 80
+        },
+        {
+          "command": "0xe",
+          "file_offset": 86299616,
+          "size": 32
+        },
+        {
+          "command": "0x1b",
+          "file_offset": 86299648,
+          "size": 24
+        },
+        {
+          "command": "0x32",
+          "file_offset": 86299672,
+          "size": 32
+        },
+        {
+          "command": "0x2a",
+          "file_offset": 86299704,
+          "size": 16
+        },
+        {
+          "command": "0x80000028",
+          "file_offset": 86299720,
+          "size": 24
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86299744,
+          "size": 48,
+          "name": "/usr/lib/libc++.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86299792,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86299880,
+          "size": 48,
+          "name": "/usr/lib/libz.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86299928,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300040,
+          "size": 56,
+          "name": "/usr/lib/libxml2.2.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300096,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300192,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AVKit.framework/Versions/A/AVKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300280,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CloudKit.framework/Versions/A/CloudKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300376,
+          "size": 96,
+          "name": "@executable_path/../Frameworks/ArcCore.framework/Versions/A/ArcCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300472,
+          "size": 72,
+          "name": "@rpath/Lottie.framework/Versions/A/Lottie"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300544,
+          "size": 72,
+          "name": "@rpath/Sparkle.framework/Versions/B/Sparkle"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300616,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300712,
+          "size": 56,
+          "name": "/usr/lib/libobjc.A.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300768,
+          "size": 56,
+          "name": "/usr/lib/libSystem.B.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300824,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86300920,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301024,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301120,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301216,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301304,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301392,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301488,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301592,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301696,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301792,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301896,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86301992,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302096,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302192,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302288,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302384,
+          "size": 96,
+          "name": "/System/Library/Frameworks/GameplayKit.framework/Versions/A/GameplayKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302480,
+          "size": 88,
+          "name": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302568,
+          "size": 88,
+          "name": "/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302656,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302744,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86302840,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetricKit.framework/Versions/A/MetricKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86302936,
+          "size": 104,
+          "name": "/System/Library/Frameworks/NaturalLanguage.framework/Versions/A/NaturalLanguage"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303040,
+          "size": 88,
+          "name": "/System/Library/Frameworks/PDFKit.framework/Versions/A/PDFKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303128,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303224,
+          "size": 120,
+          "name": "/System/Library/Frameworks/QuickLookThumbnailing.framework/Versions/A/QuickLookThumbnailing"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303344,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303440,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303552,
+          "size": 104,
+          "name": "/System/Library/Frameworks/ScriptingBridge.framework/Versions/A/ScriptingBridge"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303656,
+          "size": 88,
+          "name": "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303744,
+          "size": 112,
+          "name": "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303856,
+          "size": 88,
+          "name": "/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86303944,
+          "size": 56,
+          "name": "/usr/lib/libcompression.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304000,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftAVFoundation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304072,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftAccelerate.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304136,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCompression.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86304208,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCore.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304272,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreAudio.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86304336,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304408,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreImage.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304472,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreLocation.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304544,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86304608,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftCoreMedia.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86304672,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftDarwin.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86304736,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftDispatch.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304800,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftGLKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304864,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftGameplayKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86304936,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftIOKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305000,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMapKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305064,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMetal.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305128,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftMetalKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305192,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftModelIO.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86305256,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftNaturalLanguage.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305328,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftOSLog.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86305392,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftObjectiveC.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86305456,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftQuartzCore.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305520,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftQuickLookUI.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86305592,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftRegexBuilder.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305664,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSceneKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305728,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSpatial.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305792,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftSpriteKit.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86305856,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftSynchronization.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86305928,
+          "size": 80,
+          "name": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86306008,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftXPC.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306072,
+          "size": 72,
+          "name": "/usr/lib/swift/libswift_Concurrency.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306144,
+          "size": 72,
+          "name": "/usr/lib/swift/libswift_StringProcessing.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306216,
+          "size": 56,
+          "name": "/usr/lib/swift/libswiftos.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86306272,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftsimd.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306336,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftAppKit.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306400,
+          "size": 72,
+          "name": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 86306472,
+          "size": 64,
+          "name": "/usr/lib/swift/libswiftNetwork.dylib"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 86306536,
+          "size": 64,
+          "name": "@rpath/libswiftCompatibilitySpan.dylib"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 86306600,
+          "size": 32,
+          "name": "/usr/lib/swift"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 86306632,
+          "size": 48,
+          "name": "@executable_path/../Frameworks"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 86306680,
+          "size": 40,
+          "name": "@loader_path/../Frameworks"
+        },
+        {
+          "command": "0x8000001c",
+          "file_offset": 86306720,
+          "size": 40,
+          "name": "@executable_path/Frameworks"
+        },
+        {
+          "command": "0x26",
+          "file_offset": 86306760,
+          "size": 16
+        },
+        {
+          "command": "0x29",
+          "file_offset": 86306776,
+          "size": 16
+        },
+        {
+          "command": "0x1d",
+          "file_offset": 86306792,
+          "size": 16,
+          "signature_offset": 79619168,
+          "signature_size": 176240
+        }
+      ]
+    }
+  ]
+}

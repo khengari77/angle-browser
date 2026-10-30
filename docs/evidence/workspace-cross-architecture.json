@@ -1,0 +1,26 @@
+{
+  "x86_64_sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "arm64_sha256": "77be289e16a139056dd9d0bf145ad4707d4e217289bb279a333949dcfd39c52d",
+  "compared_contexts": [
+    "StorableSidebar.StorableSidebar",
+    "SidebarDataStore.AppSidebarReducerState",
+    "BaseModels.SidebarContainer",
+    "BaseModels.SidebarContainerType",
+    "BaseModels.SidebarItem",
+    "BaseModels.SidebarItemData",
+    "BaseModels.SidebarItemDictionaryCoding",
+    "BaseModels.SpaceModel",
+    "BaseModels.SpaceModel.CodingKeys",
+    "BaseModels.SpaceModel.CustomInfo",
+    "BaseModels.SpaceModel.ContainerType",
+    "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType",
+    "SidebarSyncCloudKit.ZoneSyncData",
+    "FirebaseSidebarSyncCommon.PersistedFirebaseSidebarSyncState"
+  ],
+  "missing_x86_64": [],
+  "missing_arm64": [],
+  "matching_declaration_names_kinds_and_field_names": true,
+  "limitations": [
+    "Comparison covers selected compiler declarations; it does not establish identical code, serialized bytes, or runtime behavior."
+  ]
+}

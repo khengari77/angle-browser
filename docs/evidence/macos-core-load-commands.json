@@ -1,0 +1,960 @@
+{
+  "sha256": "0a51a5c702efa51484bc87df2572eb1fbd02b5894010d5677491f12c8bc42a53",
+  "size": 501736400,
+  "slices": [
+    {
+      "architecture": "x86_64",
+      "offset": 16384,
+      "size": 262415520,
+      "commands": [
+        {
+          "command": "0x19",
+          "file_offset": 16416,
+          "size": 1032
+        },
+        {
+          "command": "0x19",
+          "file_offset": 17448,
+          "size": 632
+        },
+        {
+          "command": "0x19",
+          "file_offset": 18080,
+          "size": 1752
+        },
+        {
+          "command": "0x19",
+          "file_offset": 19832,
+          "size": 152
+        },
+        {
+          "command": "0x19",
+          "file_offset": 19984,
+          "size": 72
+        },
+        {
+          "command": "0x80000034",
+          "file_offset": 20056,
+          "size": 16
+        },
+        {
+          "command": "0x80000033",
+          "file_offset": 20072,
+          "size": 16
+        },
+        {
+          "command": "0x2",
+          "file_offset": 20088,
+          "size": 24
+        },
+        {
+          "command": "0xb",
+          "file_offset": 20112,
+          "size": 80
+        },
+        {
+          "command": "0xd",
+          "file_offset": 20192,
+          "size": 96,
+          "name": "@executable_path/../Frameworks/ArcCore.framework/Versions/A/ArcCore"
+        },
+        {
+          "command": "0x1b",
+          "file_offset": 20288,
+          "size": 24
+        },
+        {
+          "command": "0x32",
+          "file_offset": 20312,
+          "size": 32
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20344,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20448,
+          "size": 56,
+          "name": "/usr/lib/libobjc.A.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20504,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20608,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20704,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20800,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 20896,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21008,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21112,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21208,
+          "size": 88,
+          "name": "/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21296,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21384,
+          "size": 88,
+          "name": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21472,
+          "size": 104,
+          "name": "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21576,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CryptoTokenKit.framework/Versions/A/CryptoTokenKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21680,
+          "size": 112,
+          "name": "/System/Library/Frameworks/LocalAuthentication.framework/Versions/A/LocalAuthentication"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21792,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21888,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 21984,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22080,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22168,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22264,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22360,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 22456,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22568,
+          "size": 120,
+          "name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22688,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Network.framework/Versions/A/Network"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22776,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22888,
+          "size": 96,
+          "name": "/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 22984,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23080,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 23168,
+          "size": 104,
+          "name": "/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23272,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23376,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23472,
+          "size": 88,
+          "name": "/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23560,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Quartz.framework/Versions/A/Quartz"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23648,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23736,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23840,
+          "size": 104,
+          "name": "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 23944,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24040,
+          "size": 104,
+          "name": "/System/Library/Frameworks/Accessibility.framework/Versions/A/Accessibility"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24144,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24240,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24344,
+          "size": 96,
+          "name": "/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24440,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24536,
+          "size": 112,
+          "name": "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24648,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24760,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MediaPlayer.framework/Versions/A/MediaPlayer"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24856,
+          "size": 120,
+          "name": "/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 24976,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25072,
+          "size": 104,
+          "name": "/System/Library/Frameworks/GameController.framework/Versions/A/GameController"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25176,
+          "size": 104,
+          "name": "/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25280,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25376,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25480,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Vision.framework/Versions/A/Vision"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25568,
+          "size": 88,
+          "name": "/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25656,
+          "size": 104,
+          "name": "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25760,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25872,
+          "size": 104,
+          "name": "/System/Library/Frameworks/SafariServices.framework/Versions/A/SafariServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 25976,
+          "size": 112,
+          "name": "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26088,
+          "size": 136,
+          "name": "/System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/Versions/A/LocalAuthenticationEmbeddedUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26224,
+          "size": 56,
+          "name": "/usr/lib/libcups.2.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26280,
+          "size": 48,
+          "name": "/usr/lib/libbsm.0.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26328,
+          "size": 56,
+          "name": "/usr/lib/libpmenergy.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26384,
+          "size": 56,
+          "name": "/usr/lib/libpmsample.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26440,
+          "size": 56,
+          "name": "/usr/lib/libresolv.9.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26496,
+          "size": 56,
+          "name": "/usr/lib/libsandbox.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26552,
+          "size": 56,
+          "name": "/usr/lib/libbz2.1.0.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 26608,
+          "size": 56,
+          "name": "/usr/lib/libSystem.B.dylib"
+        },
+        {
+          "command": "0x1d",
+          "file_offset": 26664,
+          "size": 16,
+          "signature_offset": 260362896,
+          "signature_size": 2052624
+        }
+      ]
+    },
+    {
+      "architecture": "arm64",
+      "offset": 262438912,
+      "size": 239297488,
+      "commands": [
+        {
+          "command": "0x19",
+          "file_offset": 262438944,
+          "size": 1112
+        },
+        {
+          "command": "0x19",
+          "file_offset": 262440056,
+          "size": 632
+        },
+        {
+          "command": "0x19",
+          "file_offset": 262440688,
+          "size": 1752
+        },
+        {
+          "command": "0x19",
+          "file_offset": 262442440,
+          "size": 152
+        },
+        {
+          "command": "0x19",
+          "file_offset": 262442592,
+          "size": 72
+        },
+        {
+          "command": "0x80000034",
+          "file_offset": 262442664,
+          "size": 16
+        },
+        {
+          "command": "0x80000033",
+          "file_offset": 262442680,
+          "size": 16
+        },
+        {
+          "command": "0x2",
+          "file_offset": 262442696,
+          "size": 24
+        },
+        {
+          "command": "0xb",
+          "file_offset": 262442720,
+          "size": 80
+        },
+        {
+          "command": "0xd",
+          "file_offset": 262442800,
+          "size": 96,
+          "name": "@executable_path/../Frameworks/ArcCore.framework/Versions/A/ArcCore"
+        },
+        {
+          "command": "0x1b",
+          "file_offset": 262442896,
+          "size": 24
+        },
+        {
+          "command": "0x32",
+          "file_offset": 262442920,
+          "size": 32
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262442952,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443056,
+          "size": 56,
+          "name": "/usr/lib/libobjc.A.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443112,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443216,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443312,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443408,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443504,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443616,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443720,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443816,
+          "size": 88,
+          "name": "/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443904,
+          "size": 88,
+          "name": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262443992,
+          "size": 88,
+          "name": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444080,
+          "size": 104,
+          "name": "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444184,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CryptoTokenKit.framework/Versions/A/CryptoTokenKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444288,
+          "size": 112,
+          "name": "/System/Library/Frameworks/LocalAuthentication.framework/Versions/A/LocalAuthentication"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444400,
+          "size": 96,
+          "name": "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444496,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444592,
+          "size": 96,
+          "name": "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444688,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444776,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444872,
+          "size": 96,
+          "name": "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262444968,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 262445064,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ScreenCaptureKit.framework/Versions/A/ScreenCaptureKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445176,
+          "size": 120,
+          "name": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445296,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Network.framework/Versions/A/Network"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445384,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445496,
+          "size": 96,
+          "name": "/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445592,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445688,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+        },
+        {
+          "command": "0x80000018",
+          "file_offset": 262445776,
+          "size": 104,
+          "name": "/System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445880,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262445984,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446080,
+          "size": 88,
+          "name": "/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446168,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Quartz.framework/Versions/A/Quartz"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446256,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446344,
+          "size": 104,
+          "name": "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446448,
+          "size": 104,
+          "name": "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/VideoToolbox"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446552,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/CoreMediaIO"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446648,
+          "size": 104,
+          "name": "/System/Library/Frameworks/Accessibility.framework/Versions/A/Accessibility"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446752,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446848,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262446952,
+          "size": 96,
+          "name": "/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447048,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447144,
+          "size": 112,
+          "name": "/System/Library/Frameworks/MediaAccessibility.framework/Versions/A/MediaAccessibility"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447256,
+          "size": 112,
+          "name": "/System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447368,
+          "size": 96,
+          "name": "/System/Library/Frameworks/MediaPlayer.framework/Versions/A/MediaPlayer"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447464,
+          "size": 120,
+          "name": "/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447584,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreHaptics.framework/Versions/A/CoreHaptics"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447680,
+          "size": 104,
+          "name": "/System/Library/Frameworks/GameController.framework/Versions/A/GameController"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447784,
+          "size": 104,
+          "name": "/System/Library/Frameworks/ForceFeedback.framework/Versions/A/ForceFeedback"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447888,
+          "size": 96,
+          "name": "/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262447984,
+          "size": 104,
+          "name": "/System/Library/Frameworks/CoreLocation.framework/Versions/A/CoreLocation"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448088,
+          "size": 88,
+          "name": "/System/Library/Frameworks/Vision.framework/Versions/A/Vision"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448176,
+          "size": 88,
+          "name": "/System/Library/Frameworks/CoreML.framework/Versions/A/CoreML"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448264,
+          "size": 104,
+          "name": "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448368,
+          "size": 112,
+          "name": "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448480,
+          "size": 104,
+          "name": "/System/Library/Frameworks/SafariServices.framework/Versions/A/SafariServices"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448584,
+          "size": 112,
+          "name": "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448696,
+          "size": 136,
+          "name": "/System/Library/Frameworks/LocalAuthenticationEmbeddedUI.framework/Versions/A/LocalAuthenticationEmbeddedUI"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448832,
+          "size": 56,
+          "name": "/usr/lib/libcups.2.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448888,
+          "size": 48,
+          "name": "/usr/lib/libbsm.0.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448936,
+          "size": 56,
+          "name": "/usr/lib/libpmenergy.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262448992,
+          "size": 56,
+          "name": "/usr/lib/libpmsample.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262449048,
+          "size": 56,
+          "name": "/usr/lib/libresolv.9.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262449104,
+          "size": 56,
+          "name": "/usr/lib/libsandbox.1.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262449160,
+          "size": 56,
+          "name": "/usr/lib/libbz2.1.0.dylib"
+        },
+        {
+          "command": "0xc",
+          "file_offset": 262449216,
+          "size": 56,
+          "name": "/usr/lib/libSystem.B.dylib"
+        },
+        {
+          "command": "0x1d",
+          "file_offset": 262449272,
+          "size": 16,
+          "signature_offset": 238812544,
+          "signature_size": 484944
+        }
+      ]
+    }
+  ]
+}

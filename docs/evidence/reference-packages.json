@@ -1,0 +1,14 @@
+[
+  {
+    "path": "macos/Arc-1.170.0-89123.dmg",
+    "source": "https://releases.arc.net/release/Arc-1.170.0-89123.dmg",
+    "sha256": "5cf6d057e8944f847dac83d89b4d30d7a49c8974d02d29b35d2cf5afce9e36c1",
+    "size": 458434157
+  },
+  {
+    "path": "windows/ArcReverse-Arc-1.129.0.288-x64.msix",
+    "source": "https://releases.arc.net/windows/prod/1.129.0.288/Arc.x64.msix",
+    "sha256": "b45d110aad915c82a042782b0f3dae126787107727bb44e86ad733d2479196b5",
+    "size": 363558003
+  }
+]

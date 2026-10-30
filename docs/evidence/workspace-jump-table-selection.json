@@ -1,0 +1,20 @@
+{
+  "sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "selection_basis": "Consecutive signed 32-bit table-relative entries that point into the preceding declared function code region; the first following entry escapes that region. Bounds are analyst-selected, not proof of exhaustive runtime cases.",
+  "tables": [
+    {
+      "function": "0x100f41540",
+      "end_exclusive": "0x100f41c50",
+      "branch": "0x100f415bf",
+      "table": "0x100f41b6c",
+      "entries": 56
+    },
+    {
+      "function": "0x103373b00",
+      "end_exclusive": "0x103374cd0",
+      "branch": "0x103373d32",
+      "table": "0x103374cac",
+      "entries": 6
+    }
+  ]
+}

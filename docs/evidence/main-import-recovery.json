@@ -1,0 +1,12 @@
+{
+  "operation": "search_strings",
+  "code": "provider_timeout",
+  "timeout_ms": 900000,
+  "disabled_analyzers": [
+    "Objective-C Type Metadata Analyzer"
+  ],
+  "coverage": "main-app auto-analysis incomplete; no Ghidra string or function inventory returned",
+  "evidence_export": "artifacts/persistence-research-evidence.json",
+  "session_closed": true,
+  "runtime_observed": false
+}

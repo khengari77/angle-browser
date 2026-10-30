@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+export GHIDRA_INSTALL_DIR="$root_dir/.local-tools/ghidra_12.1.4_PUBLIC"
+exec "$root_dir/.local-tools/node-v22.23.4-linux-x64/bin/node" "$root_dir/.local-tools/rea/node_modules/rea-agents/scripts/rea.mjs" "$@"

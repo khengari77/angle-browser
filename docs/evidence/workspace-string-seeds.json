@@ -1,0 +1,24 @@
+[
+  {
+    "literal": "StorableSidebar.json",
+    "slice_offsets": [
+      65838256
+    ],
+    "interpretation": "static string only; not evidence of executed file access"
+  },
+  {
+    "literal": "ARC_StorableSidebar.bundle",
+    "slice_offsets": [
+      66383808
+    ],
+    "interpretation": "static string only; not evidence of executed file access"
+  },
+  {
+    "literal": "AppSidebarReducerState+Default.swift",
+    "slice_offsets": [
+      66384289,
+      66384352
+    ],
+    "interpretation": "static string only; not evidence of executed file access"
+  }
+]

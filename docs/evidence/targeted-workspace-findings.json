@@ -1,0 +1,241 @@
+{
+  "format": "arcreverse-targeted-workspace-findings-v1",
+  "sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "persistent_project": "artifacts/ghidra-projects/ArcPreservation",
+  "baseline_saved": true,
+  "resumed_project_successfully": true,
+  "batch_completed": true,
+  "scope": "Two selected main-app function spans, no whole-program auto-analysis",
+  "analyst_annotations": "workspace-jump-table-selection.json",
+  "functions": [
+    {
+      "start": "0x100f41540",
+      "end_exclusive": "0x100f41c50",
+      "instruction_count": 290,
+      "body_within_selected_span": true,
+      "decompile_completed": true,
+      "decompile_message": "",
+      "decompiler_blocks_outside_selected_span": [
+        {
+          "start": "0x100f418c6",
+          "stop": "0x100f4206d"
+        },
+        {
+          "start": "0x100f42073",
+          "stop": "0x100f420ce"
+        },
+        {
+          "start": "0x100f420d0",
+          "stop": "0x100f420ed"
+        },
+        {
+          "start": "0x100f420f0",
+          "stop": "0x100f4215e"
+        },
+        {
+          "start": "0x100f42183",
+          "stop": "0x100f421e8"
+        },
+        {
+          "start": "0x100f4225c",
+          "stop": "0x100f42391"
+        },
+        {
+          "start": "0x100f421ea",
+          "stop": "0x100f421f8"
+        },
+        {
+          "start": "0x100f421fa",
+          "stop": "0x100f42208"
+        },
+        {
+          "start": "0x100f42160",
+          "stop": "0x100f4216e"
+        },
+        {
+          "start": "0x100f42174",
+          "stop": "0x100f42182"
+        },
+        {
+          "start": "0x100f4220e",
+          "stop": "0x100f4220e"
+        },
+        {
+          "start": "0x100f42213",
+          "stop": "0x100f4225a"
+        },
+        {
+          "start": "0x100f41c50",
+          "stop": "0x100f41cdc"
+        },
+        {
+          "start": "0x100f41cde",
+          "stop": "0x100f41ce5"
+        },
+        {
+          "start": "0x100f41cea",
+          "stop": "0x100f41cf6"
+        },
+        {
+          "start": "0x100f41d0a",
+          "stop": "0x100f41d11"
+        },
+        {
+          "start": "0x100f41cf8",
+          "stop": "0x100f41d08"
+        },
+        {
+          "start": "0x100f41d16",
+          "stop": "0x100f41d8e"
+        },
+        {
+          "start": "0x100f41d9a",
+          "stop": "0x100f41e01"
+        },
+        {
+          "start": "0x100f41e03",
+          "stop": "0x100f41e0b"
+        },
+        {
+          "start": "0x100f41d90",
+          "stop": "0x100f41d98"
+        },
+        {
+          "start": "0x100f41e11",
+          "stop": "0x100f41e48"
+        },
+        {
+          "start": "0x100f41e4a",
+          "stop": "0x100f41e58"
+        },
+        {
+          "start": "0x100f41e59",
+          "stop": "0x100f41e59"
+        },
+        {
+          "start": "0x100f41e5e",
+          "stop": "0x100f41f93"
+        }
+      ],
+      "pseudocode_accepted_for_semantic_claims": false,
+      "selected_api_references": [
+        {
+          "from": "0x100f4158b",
+          "to": "0x103b8b15c",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation3URLVMa"
+        }
+      ],
+      "assembly_sha256": "7d7e4ca978ac276f5d45dcc2dcd1fe4832adf3f9096f2a043631fe16ff179d0c",
+      "ghidra_filename_data_references": [],
+      "filename_instruction": {
+        "address": "0x100f418ed",
+        "original_file_offset": 15997165,
+        "target": "0x103ec9cb0",
+        "ghidra_listing": "0x100f418ed LEA RAX,[0x103ec9cb0]",
+        "source": "Ghidra Listing operand and independently decoded original instruction bytes; no filename data-xref record was generated with auto-analysis disabled"
+      }
+    },
+    {
+      "start": "0x103373b00",
+      "end_exclusive": "0x103374cd0",
+      "instruction_count": 970,
+      "body_within_selected_span": true,
+      "decompile_completed": false,
+      "decompile_message": "Exception while decompiling 103373b00: process: timeout\n",
+      "decompiler_blocks_outside_selected_span": [],
+      "pseudocode_accepted_for_semantic_claims": false,
+      "selected_api_references": [
+        {
+          "from": "0x103373ca4",
+          "to": "0x103b8b15c",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation3URLVMa"
+        },
+        {
+          "from": "0x103373e9f",
+          "to": "0x103b8fb66",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_NSTemporaryDirectory"
+        },
+        {
+          "from": "0x103373f20",
+          "to": "0x103b8b0c0",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF"
+        },
+        {
+          "from": "0x1033745bf",
+          "to": "0x103b8ac0a",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation11JSONEncoderCMa"
+        },
+        {
+          "from": "0x1033745d9",
+          "to": "0x103b8ac04",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation11JSONEncoderCACycfc"
+        },
+        {
+          "from": "0x103374605",
+          "to": "0x103b8abf2",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation11JSONEncoderC6encodeyAA4DataVxKSERzlFTj"
+        },
+        {
+          "from": "0x1033746c7",
+          "to": "0x103b8b0c0",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF"
+        },
+        {
+          "from": "0x1033746e1",
+          "to": "0x103b8b1ec",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation4DataV5write2to7optionsyAA3URLV_So20NSDataWritingOptionsVtKF"
+        },
+        {
+          "from": "0x10337494d",
+          "to": "0x103b8ac04",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation11JSONEncoderCACycfc"
+        },
+        {
+          "from": "0x10337496e",
+          "to": "0x103b8abf2",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation11JSONEncoderC6encodeyAA4DataVxKSERzlFTj"
+        },
+        {
+          "from": "0x1033749ee",
+          "to": "0x103b8b0c0",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF"
+        },
+        {
+          "from": "0x1033749fe",
+          "to": "0x103b8b1ec",
+          "kind": "UNCONDITIONAL_CALL",
+          "target_symbol": "_$s10Foundation4DataV5write2to7optionsyAA3URLV_So20NSDataWritingOptionsVtKF"
+        }
+      ],
+      "assembly_sha256": "8b664e178eae34f7f2121f1cda0b3f7847559bff0bb44ec002fdb2e1ea7a29b0",
+      "ghidra_filename_data_references": [],
+      "filename_instruction": {
+        "address": "0x103374692",
+        "original_file_offset": 53954194,
+        "target": "0x103ec9cb0",
+        "ghidra_listing": "0x103374692 LEA RSI,[0x103ec9cb0]",
+        "source": "Ghidra Listing operand and independently decoded original instruction bytes; no filename data-xref record was generated with auto-analysis disabled"
+      }
+    }
+  ],
+  "limitations": [
+    "Only explicitly selected spans are disassembled; no whole-program auto-analysis ran.",
+    "Callers and indirect calls may be absent; function signatures and inferred types are incomplete.",
+    "Decompiler output is pseudocode, not recovered source or observed runtime behavior.",
+    "Function 0x100f41540 returned pseudocode with out-of-span blocks; it is excluded from semantic claims.",
+    "Function 0x103373b00 exceeded its 45-second decompiler limit; instruction/reference analysis still completed.",
+    "Selected API calls and the filename reference identify a JSON-writing candidate, not proof of normal workspace persistence or a verified JSON schema."
+  ]
+}

@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"ArcReverse Content Probe","version":"1.0","permissions":["storage"],"content_scripts":[{"matches":["http://localhost/*"],"js":["content.js"]}]}

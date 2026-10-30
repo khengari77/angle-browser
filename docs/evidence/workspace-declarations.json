@@ -1,0 +1,1324 @@
+{
+  "format": "arcreverse-workspace-declarations-v1",
+  "sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "source_descriptor_count": 11556,
+  "source_unresolved_names": 3087,
+  "source_issues": [],
+  "selection": [
+    "StorableSidebar.StorableSidebar",
+    "SidebarDataStore.AppSidebarReducerState",
+    "BaseModels.SidebarContainer",
+    "BaseModels.SidebarContainerType",
+    "BaseModels.SidebarItem",
+    "BaseModels.SidebarItemData",
+    "BaseModels.SidebarItemDictionaryCoding",
+    "BaseModels.SpaceModel",
+    "BaseModels.SpaceModel.CodingKeys",
+    "BaseModels.SpaceModel.CustomInfo",
+    "BaseModels.SpaceModel.ContainerType",
+    "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType",
+    "SidebarSyncCloudKit.ZoneSyncData",
+    "FirebaseSidebarSyncCommon.PersistedFirebaseSidebarSyncState"
+  ],
+  "not_resolved_by_selection": [],
+  "declarations": [
+    {
+      "descriptor_file_offset": 70910964,
+      "descriptor_address": "0x1043a03f4",
+      "kind": 2,
+      "context": "BaseModels.SidebarItemData",
+      "type_name": {
+        "file_offset": 67881738,
+        "address": "0x1040bcb0a",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x10426fb24",
+            "context": "BaseModels.SidebarItemData"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70910980,
+          "flags": 0,
+          "name": "tab",
+          "mangled_type": {
+            "file_offset": 67881744,
+            "address": "0x1040bcb10",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5210",
+                "context": "BaseModels.SidebarTab"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70910992,
+          "flags": 0,
+          "name": "list",
+          "mangled_type": {
+            "file_offset": 67881750,
+            "address": "0x1040bcb16",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a52d8",
+                "context": "BaseModels.SidebarList"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911004,
+          "flags": 0,
+          "name": "arcDocument",
+          "mangled_type": {
+            "file_offset": 67880922,
+            "address": "0x1040bc7da",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x10426f894",
+                "context": "BaseModels.SidebarArcDocument"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911016,
+          "flags": 0,
+          "name": "easel",
+          "mangled_type": {
+            "file_offset": 67881072,
+            "address": "0x1040bc870",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x10426f920",
+                "context": "BaseModels.SidebarEasel"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911028,
+          "flags": 0,
+          "name": "itemContainer",
+          "mangled_type": {
+            "file_offset": 67881264,
+            "address": "0x1040bc930",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x10426f9e4",
+                "context": "BaseModels.SidebarItemContainer"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911040,
+          "flags": 0,
+          "name": "welcomeToArc",
+          "mangled_type": {
+            "file_offset": 67881756,
+            "address": "0x1040bcb1c",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a55b0",
+                "context": "BaseModels.SidebarWelcomeToArc"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911052,
+          "flags": 0,
+          "name": "splitView",
+          "mangled_type": {
+            "file_offset": 67881762,
+            "address": "0x1040bcb22",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a55e8",
+                "context": "BaseModels.SidebarSplitViewData"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911064,
+          "flags": 0,
+          "name": "sharedObject",
+          "mangled_type": {
+            "file_offset": 67881768,
+            "address": "0x1040bcb28",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a55a0",
+                "context": "BaseModels.SidebarSharedObject"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911076,
+          "flags": 0,
+          "name": "instantLinks",
+          "mangled_type": {
+            "file_offset": 67881144,
+            "address": "0x1040bc8b8",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x10426f988",
+                "context": "BaseModels.SidebarInstantLinks"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70911088,
+          "flags": 0,
+          "name": "tabGroup",
+          "mangled_type": {
+            "file_offset": 67881774,
+            "address": "0x1040bcb2e",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5490",
+                "context": "BaseModels.SidebarTabGroup"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70914488,
+      "descriptor_address": "0x1043a11b8",
+      "kind": 0,
+      "context": "BaseModels.SidebarContainer",
+      "type_name": {
+        "file_offset": 67883498,
+        "address": "0x1040bd1ea",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 2,
+            "target": "0x1046a54d8",
+            "context": "BaseModels.SidebarContainer"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70914504,
+          "flags": 2,
+          "name": "items",
+          "mangled_type": {
+            "file_offset": 67883434,
+            "address": "0x1040bd1aa",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70914516,
+          "flags": 2,
+          "name": "spaces",
+          "mangled_type": {
+            "file_offset": 67883692,
+            "address": "0x1040bd2ac",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046aa280",
+                "context": "OrderedCollections.OrderedDictionary"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a5230",
+                "context": "BaseModels.SpaceModel"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70914528,
+          "flags": 2,
+          "name": "topAppsContainerIDs",
+          "mangled_type": {
+            "file_offset": 67883468,
+            "address": "0x1040bd1cc",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8a0",
+                "context": "ADKModels.Profile"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70914628,
+      "descriptor_address": "0x1043a1244",
+      "kind": 3,
+      "context": "BaseModels.SidebarContainerType",
+      "type_name": {
+        "file_offset": 67885296,
+        "address": "0x1040bd8f0",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270594",
+            "context": "BaseModels.SidebarContainerType"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70914644,
+          "flags": 0,
+          "name": "incognito",
+          "mangled_type": {
+            "file_offset": 67869926,
+            "address": "0x1040b9ce6",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8b8",
+                "context": "ADKModels.WindowID"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70914656,
+          "flags": 0,
+          "name": "littleBrowser",
+          "mangled_type": {
+            "file_offset": 67869926,
+            "address": "0x1040b9ce6",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8b8",
+                "context": "ADKModels.WindowID"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70914668,
+          "flags": 0,
+          "name": "standalone",
+          "mangled_type": {
+            "file_offset": 67869926,
+            "address": "0x1040b9ce6",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8b8",
+                "context": "ADKModels.WindowID"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70914680,
+          "flags": 0,
+          "name": "global",
+          "mangled_type": null
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70916048,
+      "descriptor_address": "0x1043a17d0",
+      "kind": 0,
+      "context": "BaseModels.SidebarItem",
+      "type_name": {
+        "file_offset": 67883686,
+        "address": "0x1040bd2a6",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 2,
+            "target": "0x1046a52d0",
+            "context": "BaseModels.SidebarItem"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70916064,
+          "flags": 2,
+          "name": "id",
+          "mangled_type": {
+            "file_offset": 67880620,
+            "address": "0x1040bc6ac",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916076,
+          "flags": 2,
+          "name": "title",
+          "mangled_type": {
+            "file_offset": 67869596,
+            "address": "0x1040b9b9c",
+            "text": "SSSg",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 70916088,
+          "flags": 2,
+          "name": "childrenIds",
+          "mangled_type": {
+            "file_offset": 67869066,
+            "address": "0x1040b998a",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046aa2a0",
+                "context": "OrderedCollections.OrderedSet"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916100,
+          "flags": 2,
+          "name": "parentID",
+          "mangled_type": {
+            "file_offset": 67880734,
+            "address": "0x1040bc71e",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916112,
+          "flags": 2,
+          "name": "data",
+          "mangled_type": {
+            "file_offset": 67881738,
+            "address": "0x1040bcb0a",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x10426fb24",
+                "context": "BaseModels.SidebarItemData"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916124,
+          "flags": 2,
+          "name": "createdAt",
+          "mangled_type": {
+            "file_offset": 67874724,
+            "address": "0x1040bafa4",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046b0d00",
+                "unresolved": "external bound context remains unresolved"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916136,
+          "flags": 2,
+          "name": "isUnread",
+          "mangled_type": {
+            "file_offset": 67874720,
+            "address": "0x1040bafa0",
+            "text": "Sb",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 70916148,
+          "flags": 2,
+          "name": "originatingDevice",
+          "mangled_type": {
+            "file_offset": 67869596,
+            "address": "0x1040b9b9c",
+            "text": "SSSg",
+            "symbolic_references": []
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70916460,
+      "descriptor_address": "0x1043a196c",
+      "kind": 0,
+      "context": "BaseModels.SidebarItemDictionaryCoding",
+      "type_name": {
+        "file_offset": 67886304,
+        "address": "0x1040bdce0",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270898",
+            "context": "BaseModels.SidebarItemDictionaryCoding"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70916476,
+          "flags": 2,
+          "name": "dictionary",
+          "mangled_type": {
+            "file_offset": 67883434,
+            "address": "0x1040bd1aa",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70916960,
+      "descriptor_address": "0x1043a1b60",
+      "kind": 0,
+      "context": "BaseModels.SpaceModel",
+      "type_name": {
+        "file_offset": 67882466,
+        "address": "0x1040bcde2",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 2,
+            "target": "0x1046a5230",
+            "context": "BaseModels.SpaceModel"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70916976,
+          "flags": 2,
+          "name": "id",
+          "mangled_type": {
+            "file_offset": 67868314,
+            "address": "0x1040b969a",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a5230",
+                "context": "BaseModels.SpaceModel"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70916988,
+          "flags": 2,
+          "name": "title",
+          "mangled_type": {
+            "file_offset": 67869596,
+            "address": "0x1040b9b9c",
+            "text": "SSSg",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 70917000,
+          "flags": 2,
+          "name": "containerIDs",
+          "mangled_type": {
+            "file_offset": 67883838,
+            "address": "0x1040bd33e",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5220",
+                "context": "BaseModels.SpaceModel.ContainerType"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70917012,
+          "flags": 2,
+          "name": "customInfo",
+          "mangled_type": {
+            "file_offset": 67886892,
+            "address": "0x1040bdf2c",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x104270aa8",
+                "context": "BaseModels.SpaceModel.CustomInfo"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70917024,
+          "flags": 2,
+          "name": "profile",
+          "mangled_type": {
+            "file_offset": 67881276,
+            "address": "0x1040bc93c",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8a0",
+                "context": "ADKModels.Profile"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70917036,
+      "descriptor_address": "0x1043a1bac",
+      "kind": 2,
+      "context": "BaseModels.SpaceModel.ContainerType",
+      "type_name": {
+        "file_offset": 67886898,
+        "address": "0x1040bdf32",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270a70",
+            "context": "BaseModels.SpaceModel.ContainerType"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70917052,
+          "flags": 0,
+          "name": "unpinned",
+          "mangled_type": {
+            "file_offset": 67886904,
+            "address": "0x1040bdf38",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 1,
+                "target": "0x104270a8c",
+                "context": "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70917064,
+          "flags": 0,
+          "name": "pinned",
+          "mangled_type": null
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70917076,
+      "descriptor_address": "0x1043a1bd4",
+      "kind": 2,
+      "context": "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType",
+      "type_name": {
+        "file_offset": 67886904,
+        "address": "0x1040bdf38",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270a8c",
+            "context": "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70917092,
+          "flags": 0,
+          "name": "desktop",
+          "mangled_type": {
+            "file_offset": 67886910,
+            "address": "0x1040bdf3e",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ae8b8",
+                "context": "ADKModels.WindowID"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70917104,
+          "flags": 0,
+          "name": "shared",
+          "mangled_type": null
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70917116,
+      "descriptor_address": "0x1043a1bfc",
+      "kind": 0,
+      "context": "BaseModels.SpaceModel.CustomInfo",
+      "type_name": {
+        "file_offset": 67886892,
+        "address": "0x1040bdf2c",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270aa8",
+            "context": "BaseModels.SpaceModel.CustomInfo"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70917132,
+          "flags": 2,
+          "name": "iconType",
+          "mangled_type": {
+            "file_offset": 67886940,
+            "address": "0x1040bdf5c",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5518",
+                "context": "BaseModels.SidebarCustomIcon"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 70917144,
+          "flags": 2,
+          "name": "windowTheme",
+          "mangled_type": {
+            "file_offset": 67867210,
+            "address": "0x1040b924a",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5348",
+                "context": "BaseModels.WindowTheme"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 70917336,
+      "descriptor_address": "0x1043a1cd8",
+      "kind": 2,
+      "context": "BaseModels.SpaceModel.CodingKeys",
+      "type_name": {
+        "file_offset": 67886984,
+        "address": "0x1040bdf88",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x104270b0c",
+            "context": "BaseModels.SpaceModel.CodingKeys"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 70917352,
+          "flags": 0,
+          "name": "id",
+          "mangled_type": null
+        },
+        {
+          "record_file_offset": 70917364,
+          "flags": 0,
+          "name": "title",
+          "mangled_type": null
+        },
+        {
+          "record_file_offset": 70917376,
+          "flags": 0,
+          "name": "customInfo",
+          "mangled_type": null
+        },
+        {
+          "record_file_offset": 70917388,
+          "flags": 0,
+          "name": "profile",
+          "mangled_type": null
+        },
+        {
+          "record_file_offset": 70917400,
+          "flags": 0,
+          "name": "containerIDs",
+          "mangled_type": null
+        },
+        {
+          "record_file_offset": 70917412,
+          "flags": 0,
+          "name": "legacyContainerIDs",
+          "mangled_type": null
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 71083692,
+      "descriptor_address": "0x1043ca6ac",
+      "kind": 0,
+      "context": "SidebarDataStore.AppSidebarReducerState",
+      "type_name": {
+        "file_offset": 68193552,
+        "address": "0x104108d10",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x10429331c",
+            "context": "SidebarDataStore.AppSidebarReducerState"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 71083708,
+          "flags": 2,
+          "name": "containers",
+          "mangled_type": {
+            "file_offset": 68193514,
+            "address": "0x104108cea",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a55d0",
+                "context": "BaseModels.SidebarContainerType"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a54d8",
+                "context": "BaseModels.SidebarContainer"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 71093548,
+      "descriptor_address": "0x1043ccd2c",
+      "kind": 0,
+      "context": "FirebaseSidebarSyncCommon.PersistedFirebaseSidebarSyncState",
+      "type_name": {
+        "file_offset": 68212964,
+        "address": "0x10410d8e4",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 2,
+            "target": "0x1046ab610",
+            "context": "FirebaseSidebarSyncCommon.PersistedFirebaseSidebarSyncState"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 71093564,
+          "flags": 2,
+          "name": "syncData",
+          "mangled_type": {
+            "file_offset": 68211860,
+            "address": "0x10410d494",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ab628",
+                "context": "FirebaseSidebarSyncCommon.SyncData"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71093576,
+          "flags": 2,
+          "name": "firebaseSidebarUnrecoverableError",
+          "mangled_type": {
+            "file_offset": 68213406,
+            "address": "0x10410da9e",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5748",
+                "context": "BaseModels.FirebaseSyncUnrecoverableErrorType"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71093588,
+          "flags": 2,
+          "name": "unacknowledgedItemDeletions",
+          "mangled_type": {
+            "file_offset": 68211736,
+            "address": "0x10410d418",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71093600,
+          "flags": 2,
+          "name": "lastSyncedTimestamp",
+          "mangled_type": {
+            "file_offset": 68212524,
+            "address": "0x10410d72c",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046b0d00",
+                "unresolved": "external bound context remains unresolved"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71093612,
+          "flags": 2,
+          "name": "currentPublishTransactionRetryCount",
+          "mangled_type": {
+            "file_offset": 68210952,
+            "address": "0x10410d108",
+            "text": "SiSg",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 71093624,
+          "flags": 2,
+          "name": "currentPublishTransactionRetryState",
+          "mangled_type": {
+            "file_offset": 68212188,
+            "address": "0x10410d5dc",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ab658",
+                "context": "FirebaseSidebarSyncCommon.PublishRetryState"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71093636,
+          "flags": 2,
+          "name": "publishInProgress",
+          "mangled_type": {
+            "file_offset": 68213442,
+            "address": "0x10410dac2",
+            "text": "SbSg",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 71093648,
+          "flags": 2,
+          "name": "syncHealthStatus",
+          "mangled_type": {
+            "file_offset": 68213448,
+            "address": "0x10410dac8",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ab620",
+                "context": "FirebaseSidebarSyncCommon.SyncHealthStatus"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 71108060,
+      "descriptor_address": "0x1043d05dc",
+      "kind": 0,
+      "context": "SidebarSyncCloudKit.ZoneSyncData",
+      "type_name": {
+        "file_offset": 68277476,
+        "address": "0x10411d4e4",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 2,
+            "target": "0x1046aac28",
+            "context": "SidebarSyncCloudKit.ZoneSyncData"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 71108076,
+          "flags": 2,
+          "name": "container",
+          "mangled_type": {
+            "file_offset": 68277282,
+            "address": "0x10411d422",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046aac80",
+                "context": "SidebarSyncCloudKit.SyncedValue"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046aac88",
+                "context": "SidebarSyncCloudKit.SyncedContainer"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71108088,
+          "flags": 2,
+          "name": "items",
+          "mangled_type": {
+            "file_offset": 68279240,
+            "address": "0x10411dbc8",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a52d0",
+                "context": "BaseModels.SidebarItem"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046aac80",
+                "context": "SidebarSyncCloudKit.SyncedValue"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71108100,
+          "flags": 2,
+          "name": "spaceModels",
+          "mangled_type": {
+            "file_offset": 68279200,
+            "address": "0x10411dba0",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a9770",
+                "context": "ARCFoundationBase.Identifier"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046a5230",
+                "context": "BaseModels.SpaceModel"
+              },
+              {
+                "kind": 2,
+                "target": "0x1046aac80",
+                "context": "SidebarSyncCloudKit.SyncedValue"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71108112,
+          "flags": 2,
+          "name": "syncMetadata",
+          "mangled_type": {
+            "file_offset": 68277924,
+            "address": "0x10411d6a4",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ab3f0",
+                "context": "CloudKitContainerClient.SyncEngine.SyncMetadata"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71108124,
+          "flags": 2,
+          "name": "lastSuccessfulSyncDate",
+          "mangled_type": {
+            "file_offset": 68276338,
+            "address": "0x10411d072",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046b0d00",
+                "unresolved": "external bound context remains unresolved"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71108136,
+          "flags": 2,
+          "name": "lastSyncErrorState",
+          "mangled_type": {
+            "file_offset": 68279178,
+            "address": "0x10411db8a",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a5628",
+                "context": "BaseModels.CloudKitSyncErrorState"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "descriptor_file_offset": 71291204,
+      "descriptor_address": "0x1043fd144",
+      "kind": 0,
+      "context": "StorableSidebar.StorableSidebar",
+      "type_name": {
+        "file_offset": 69137004,
+        "address": "0x1041ef26c",
+        "text": null,
+        "symbolic_references": [
+          {
+            "kind": 1,
+            "target": "0x1042c66e8",
+            "context": "StorableSidebar.StorableSidebar"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "record_file_offset": 71291220,
+          "flags": 2,
+          "name": "version",
+          "mangled_type": {
+            "file_offset": 69137010,
+            "address": "0x1041ef272",
+            "text": "Si",
+            "symbolic_references": []
+          }
+        },
+        {
+          "record_file_offset": 71291232,
+          "flags": 2,
+          "name": "sidebar",
+          "mangled_type": {
+            "file_offset": 69137014,
+            "address": "0x1041ef276",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046a94b8",
+                "context": "SidebarDataStore.AppSidebarReducerState"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71291244,
+          "flags": 2,
+          "name": "sidebarSyncState",
+          "mangled_type": {
+            "file_offset": 69136848,
+            "address": "0x1041ef1d0",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046aac28",
+                "context": "SidebarSyncCloudKit.ZoneSyncData"
+              }
+            ]
+          }
+        },
+        {
+          "record_file_offset": 71291256,
+          "flags": 2,
+          "name": "firebaseSyncState",
+          "mangled_type": {
+            "file_offset": 69136856,
+            "address": "0x1041ef1d8",
+            "text": null,
+            "symbolic_references": [
+              {
+                "kind": 2,
+                "target": "0x1046ab610",
+                "context": "FirebaseSidebarSyncCommon.PersistedFirebaseSidebarSyncState"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Compiler declarations do not establish Codable conformance, JSON keys, serialized representation, or runtime behavior.",
+    "Context kinds outside module/protocol/class/struct/enum and indirect parents remain unresolved.",
+    "Symbolic references are byte-preserved; direct context references and verified format-6 chained internal rebase contexts are named; bound imports remain unresolved."
+  ]
+}

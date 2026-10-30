@@ -1,0 +1,29 @@
+{
+  "host": "Fedora 42 / Hyprland",
+  "qt": "6.11.3",
+  "rendering": {
+    "wayland": "passed temporary HTTPS smoke",
+    "x11_xwayland": "passed temporary HTTPS smoke"
+  },
+  "workspace_suite": "passed",
+  "research_tests": 17,
+  "extensions": {
+    "status": "blocked",
+    "reproducer": "tests/extension_probe.cpp",
+    "observations": [
+      "Installation reports loaded=true and enabled=false",
+      "Enablement produces SIGSEGV on Qt 6.11.3",
+      "Content-only and popup fixtures reproduce the failure",
+      "X11 reproduces the Qt 6.11.3 failure",
+      "The independent native probe also crashes with Qt 6.12.0"
+    ],
+    "normal_application_enablement": "disabled"
+  },
+  "unverified": [
+    "Ubuntu CI",
+    "close visual parity",
+    "complete permission/download/crash-recovery coverage",
+    "portable installation"
+  ],
+  "next": "prebuilt CEF evaluation"
+}

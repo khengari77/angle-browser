@@ -1,0 +1,43 @@
+{
+  "test_binary_sha256": "708e95351ecfb3d431f0cbd3baed495c2a6d56d852889a58dc66c949e66b88fe",
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "evidence_id": "ev_db33c2bfb0ef0267494f833ba5910f00e59277c67ee0628e5ceb5174ea2645c0",
+  "operation": "analyze_function",
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+    "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+    "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+    "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+    "The Java bridge serializes one function request per Program. Decompilation runs until completion or caller cancellation unless REA_GHIDRA_DECOMPILE_TIMEOUT_SECONDS sets a per-function limit. That limit stops the requested decompile without requesting session closure; caller cancellation requests session closure."
+  ],
+  "original_arc_import": {
+    "code": "provider_timeout",
+    "startup_deadline_ms": 330000,
+    "coverage": "incomplete; no function-level conclusion"
+  },
+  "mcp_function_analysis_verified": true,
+  "acquisition_date": "2026-10-29",
+  "arc_helper_analysis": {
+    "sha256": "83afff3167ba2edc7081df09db4227883041f7d70d885d0542ce2ea2304f415f",
+    "evidence_id": "ev_3a46bfa5ac8456b2b10a4506e3fa7acb01353cf4bfb456a9290857fe56a3538a",
+    "operation": "binary_overview",
+    "limitations": [
+      "Derived by an REA composed workflow.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Counts use the complete defined-string inventory and the same local/external function inventory as list_strings and list_procedures. They do not establish discovery of undefined strings or unidentified functions.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Memory-block end addresses are exclusive; segment lengths use those observed address coordinates.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Ghidra (ghidra 12.1.4) read_binary_inventory_summary: The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results."
+    ]
+  }
+}

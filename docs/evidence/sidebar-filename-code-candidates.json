@@ -1,0 +1,38 @@
+{
+  "format": "arcreverse-x86-literal-refs-v1",
+  "sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "literal": "StorableSidebar.json",
+  "targets": [
+    "0x103ec9cb0"
+  ],
+  "function_starts_count": 276070,
+  "candidates": [
+    {
+      "instruction_address": "0x100f418ed",
+      "file_offset": 15997165,
+      "target": "0x103ec9cb0",
+      "preceding_declared_function_start": "0x100f41540",
+      "next_declared_function_start": "0x100f41c50",
+      "linear_disassembly_has_candidate_instruction_boundary": true,
+      "declared_function_span_sha256": "e99c979ac9d4669c462405f6b5cf59af202db7cb83b7a511eaca6714bb80231e",
+      "local_disassembly_filename": "0x100f41540.asm",
+      "declared_function_span_size": 1808
+    },
+    {
+      "instruction_address": "0x103374692",
+      "file_offset": 53954194,
+      "target": "0x103ec9cb0",
+      "preceding_declared_function_start": "0x103373b00",
+      "next_declared_function_start": "0x103374cd0",
+      "linear_disassembly_has_candidate_instruction_boundary": true,
+      "declared_function_span_sha256": "03295bcc27a1ebc3a5905b273d5a840b2165f1f7f3f6ec063fac6c9d689c181e",
+      "local_disassembly_filename": "0x103373b00.asm",
+      "declared_function_span_size": 4560
+    }
+  ],
+  "limitations": [
+    "Only REX.W RIP-relative LEA encodings in __text are searched.",
+    "A preceding declared function start and isolated decoding alone do not validate instruction boundaries. Optional full-span linear disassembly checks boundaries, not control-flow reachability.",
+    "No target execution or complete function analysis occurred."
+  ]
+}

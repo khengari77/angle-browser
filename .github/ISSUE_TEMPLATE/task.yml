@@ -1,0 +1,25 @@
+name: Scoped contributor task
+description: A bounded task for a human or agent
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and current behavior
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope, exclusions and dependencies
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Deliverables and acceptance checks
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Platform, access, sources and research constraints

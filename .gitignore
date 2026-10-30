@@ -1,0 +1,17 @@
+/artifacts/
+/.local-tools/
+__pycache__/
+*.pyc
+/build/
+/dist/
+
+/aqtinstall.log
+/build-*/
+
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.*
+*.pem
+*.key

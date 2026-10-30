@@ -1,0 +1,108 @@
+[
+  {
+    "key": "R1",
+    "title": "Observe sidebar layout and keyboard behavior",
+    "area": "research",
+    "dependencies": [],
+    "body": "## Goal\n\nRecord sidebar show/hide, resize limits, focus order and shortcuts using synthetic tabs.\n\n## Required environment\n\nmacOS Arc; repeat separately on Windows.\n\n## Deliverables and acceptance\n\nOriginal written specification with OS/build/date, reproducible steps, dimensions at a stated display scale, and tested edge cases. No Arc assets or screenshots required.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "R2",
+    "title": "Observe Spaces and profile isolation",
+    "area": "research",
+    "dependencies": [],
+    "body": "## Goal\n\nRecord Space creation/order/switching and profile assignment; use a loopback test site to observe cookie isolation.\n\n## Required environment\n\nmacOS or Windows Arc with owner-controlled account.\n\n## Deliverables and acceptance\n\nReproducible behavior matrix including restart, empty Space, profile switch and unresolved differences; never collect account tokens.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "R3",
+    "title": "Observe Favorites, pinned tabs and folder lifecycle",
+    "area": "research",
+    "dependencies": [],
+    "body": "## Goal\n\nRecord pin/unpin, close/reopen, nested-folder moves, ordering and saved URL behavior.\n\n## Required environment\n\nmacOS or Windows Arc.\n\n## Deliverables and acceptance\n\nSynthetic scenarios and independent behavior specification covering duplicates, nested folders and restart.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "R4",
+    "title": "Observe command bar and tab-switching behavior",
+    "area": "research",
+    "dependencies": [],
+    "body": "## Goal\n\nRecord URL/search entry, existing-tab selection, keyboard traversal, Escape and focus restoration.\n\n## Required environment\n\nmacOS or Windows Arc.\n\n## Deliverables and acceptance\n\nVersioned scenario matrix with exact inputs, actions, results and uncertainties; exclude remote suggestion API reconstruction.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "R5",
+    "title": "Document workspace persistence through synthetic file comparisons",
+    "area": "research",
+    "dependencies": [],
+    "body": "## Goal\n\nCreate minimal synthetic workspace changes one at a time; compare copied sidebar data before/after normal UI actions.\n\n## Required environment\n\nmacOS or Windows Arc; read copied local files only.\n\n## Deliverables and acceptance\n\nDocument observed keys/relationships, persistence timing and unknowns; independently constructed fixture without profile IDs, browsing history or raw profile upload.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "R6",
+    "title": "Bounded static analysis of workspace serialization references",
+    "area": "binary-re",
+    "dependencies": [],
+    "body": "## Goal\n\nAssess rights/terms basis before inspection. Trace only the two documented serialization candidates; maximum 64 KiB per selected span, 60 seconds per decompile, ten minutes total. Do not run whole-app analysis.\n\n## Required environment\n\nLocal lawfully obtained reference matching the documented hash; Ghidra or existing parsers.\n\n## Deliverables and acceptance\n\nOriginal factual report distinguishing normal persistence from export/debug only if supported; hash, ranges, commands and uncertainties. Keep pseudocode, assembly and bytes local; negative result is acceptable.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "E1",
+    "title": "Evaluate prebuilt CEF rendering and MV3 extensions",
+    "area": "engine",
+    "dependencies": [],
+    "body": "## Goal\n\nUse official prebuilt CEF, record version/source/checksum and run owned localhost fixtures. Assess content scripts, action popup storage, profile isolation and restart persistence.\n\n## Required environment\n\nLinux desktop with sandbox enabled.\n\n## Deliverables and acceptance\n\nRepeatable runner plus results for every gate; no --no-sandbox. A documented failure closes this investigation without claiming an engine pass.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "E2",
+    "title": "Validate CEF embedding into Qt Quick",
+    "area": "engine",
+    "dependencies": [
+      "E1"
+    ],
+    "body": "## Goal\n\nCreate an isolated integration spike after reviewing E1; assess rendering approach, focus, keyboard, resize, DPI, popup lifecycle, teardown and sandbox. No production engine replacement.\n\n## Required environment\n\nLinux Wayland and X11; supported prebuilt CEF.\n\n## Deliverables and acceptance\n\nRunnable spike, lifecycle explanation and test matrix identifying unsupported paths; architecture recommendation based on evidence. Do not require an automatic CEF migration.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nE1\n"
+  },
+  {
+    "key": "D1",
+    "title": "Implement a read-only synthetic Arc workspace exporter",
+    "area": "implementation",
+    "dependencies": [
+      "R5"
+    ],
+    "body": "## Goal\n\nRead copied supported sidebar JSON and export documented versioned JSON for Spaces, folders and pinned URLs. Exclude credentials, cookies and sync.\n\n## Required environment\n\nPython; reviewed persistence specification.\n\n## Deliverables and acceptance\n\nSynthetic tests for nesting, Unicode, duplicate URLs, malformed/unsupported data, deterministic output and unchanged inputs; provenance for fixtures.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nR5\n"
+  },
+  {
+    "key": "U1",
+    "title": "Improve sidebar fidelity against reviewed observations",
+    "area": "implementation",
+    "dependencies": [
+      "R1"
+    ],
+    "body": "## Goal\n\nImplement only the reviewed sidebar measurements, focus and keyboard behavior; use original graphics and native fonts.\n\n## Required environment\n\nQt Quick/Linux.\n\n## Deliverables and acceptance\n\nAngle screenshots, keyboard scenarios and regression results; no copied Arc resources or unrelated engine changes.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nR1\n"
+  },
+  {
+    "key": "U2",
+    "title": "Align tab and folder lifecycle with reviewed behavior",
+    "area": "implementation",
+    "dependencies": [
+      "R3"
+    ],
+    "body": "## Goal\n\nImplement reviewed Favorites/pin/folder semantics with transactional persistence and valid parent/profile relationships.\n\n## Required environment\n\nQt workspace tests and QML.\n\n## Deliverables and acceptance\n\nMeaningful regression tests for specified differences, restart persistence and rejection of invalid moves.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nR3\n"
+  },
+  {
+    "key": "Q1",
+    "title": "Make Linux CI reproducible from a fresh checkout",
+    "area": "quality",
+    "dependencies": [],
+    "body": "## Goal\n\nValidate documented Qt acquisition, required system packages and version pinning without local SDK/cache assumptions. Keep failing engine diagnostic separate and visibly blocked.\n\n## Required environment\n\nGitHub Actions Ubuntu 24.04.\n\n## Deliverables and acceptance\n\nSuccessful clean build, workspace tests and research tests; rendering result recorded separately; no sandbox disabling or falsely green extension claims.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "P1",
+    "title": "Complete Angle runtime identity and storage migration",
+    "area": "implementation",
+    "dependencies": [],
+    "body": "## Goal\n\nRename executable, QML namespace, env variables, package/desktop names and app identity consistently. Preserve historical research format IDs. Design explicit opt-in migration from old storage; never silently move a live profile.\n\n## Required environment\n\nLinux Qt prototype.\n\n## Deliverables and acceptance\n\nFresh and existing-user scenarios, dry-run/backup/conflict handling and updated launch/package docs; old data untouched on failure. Scope excludes Arc data import.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  },
+  {
+    "key": "P2",
+    "title": "Audit runtime dependency licensing before binary distribution",
+    "area": "quality",
+    "dependencies": [],
+    "body": "## Goal\n\nInventory actual shipped dependencies, license texts, attribution and source/relinking obligations; assess branding questions and distinguish independent implementation from clean-room claims.\n\n## Required environment\n\nQt SDK and any selected CEF build.\n\n## Deliverables and acceptance\n\nVersioned distribution checklist and notices tied to package contents; unresolved items explicitly block binary release. No assertion of legal clearance.\n\n## Boundaries\n\nRead AGENTS.md and docs/RESEARCH_POLICY.md. One focused PR; independently authored material only. No account sharing, auth bypass, personal profiles, proprietary assets or decompiled implementation. Record sources and checks not run. Research reports must use docs/templates/OBSERVATION.md and separate facts from hypotheses.\n\n## Dependencies\n\nNone; ready to claim.\n"
+  }
+]
