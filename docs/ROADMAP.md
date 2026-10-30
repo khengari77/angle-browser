@@ -24,3 +24,5 @@ Tasks are defined in [backlog.json](backlog.json) and published as GitHub issues
 Claim a task by coordinating in its issue. Use a fork and one PR per task. Include `Closes #N`; only reviewed/merged work closes an issue. Passing research tasks produce evidence, not automatic implementation or platform-support claims. Engine migration, binary releases and service replacements require separate reviewed decisions.
 
 Maintainer tooling: `python3 scripts/publish_issues.py --repo owner/repository` previews the backlog; `--apply` publishes missing issue titles and writes the issue index. It does not close issues or overwrite existing issue discussions.
+
+See [published issue links](ISSUES.md) for task claims and current discussions.

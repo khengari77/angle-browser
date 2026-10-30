@@ -60,3 +60,5 @@ See [build instructions and validation status](docs/BROWSER.md). Run `scripts/bu
 Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md). Pick a scoped GitHub issue; Mac and Windows Arc users can contribute reproducible observations without building Angle. Read the [research policy](docs/RESEARCH_POLICY.md) before inspecting Arc or submitting evidence. The [roadmap](docs/ROADMAP.md) identifies dependencies and acceptance criteria.
 
 Angle is the public project name. Existing executable names, internal schema identifiers and local storage paths still use `arcreverse`/`ArcReverse` for compatibility; this publication does not migrate user data. The UI is a development prototype, not a finished alpha. No binary release is published.
+
+[Contributor issue index](docs/ISSUES.md) · [Ready tasks](https://github.com/khengari77/angle-browser/issues?q=is%3Aissue%20is%3Aopen%20label%3Aready)

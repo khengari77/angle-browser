@@ -25,5 +25,14 @@
     "complete permission/download/crash-recovery coverage",
     "portable installation"
   ],
-  "next": "prebuilt CEF evaluation"
+  "next": "prebuilt CEF evaluation",
+  "publication_validation_2026_10_30": {
+    "fresh_configure_and_build": "passed; isolated /tmp build after checkout rename",
+    "workspace_ctest": "passed, 1 suite; 7 test functions plus setup/cleanup",
+    "python_unittest": "17 passed",
+    "github_ci": "pending at publication",
+    "qt_extension_gate": "known blocked; not rerun; manual diagnostic workflow",
+    "visual_fidelity": "not established",
+    "runtime_identity": "Angle visible branding; legacy binary/schema/storage names retained pending issue 13"
+  }
 }

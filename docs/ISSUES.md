@@ -1,0 +1,16 @@
+# Published contributor issues
+
+- [R1: [R1] Observe sidebar layout and keyboard behavior](https://github.com/khengari77/angle-browser/issues/1)
+- [R2: [R2] Observe Spaces and profile isolation](https://github.com/khengari77/angle-browser/issues/2)
+- [R3: [R3] Observe Favorites, pinned tabs and folder lifecycle](https://github.com/khengari77/angle-browser/issues/3)
+- [R4: [R4] Observe command bar and tab-switching behavior](https://github.com/khengari77/angle-browser/issues/4)
+- [R5: [R5] Document workspace persistence through synthetic file comparisons](https://github.com/khengari77/angle-browser/issues/5)
+- [R6: [R6] Bounded static analysis of workspace serialization references](https://github.com/khengari77/angle-browser/issues/6)
+- [E1: [E1] Evaluate prebuilt CEF rendering and MV3 extensions](https://github.com/khengari77/angle-browser/issues/7)
+- [E2: [E2] Validate CEF embedding into Qt Quick](https://github.com/khengari77/angle-browser/issues/8)
+- [D1: [D1] Implement a read-only synthetic Arc workspace exporter](https://github.com/khengari77/angle-browser/issues/9)
+- [U1: [U1] Improve sidebar fidelity against reviewed observations](https://github.com/khengari77/angle-browser/issues/10)
+- [U2: [U2] Align tab and folder lifecycle with reviewed behavior](https://github.com/khengari77/angle-browser/issues/11)
+- [Q1: [Q1] Make Linux CI reproducible from a fresh checkout](https://github.com/khengari77/angle-browser/issues/12)
+- [P1: [P1] Complete Angle runtime identity and storage migration](https://github.com/khengari77/angle-browser/issues/13)
+- [P2: [P2] Audit runtime dependency licensing before binary distribution](https://github.com/khengari77/angle-browser/issues/14)
