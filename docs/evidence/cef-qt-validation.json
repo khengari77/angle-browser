@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-08",
+  "note": "Runtime resources and probe-owned profiles only; X11 means XWayland on this host. No production integration qualification.",
+  "cases": [
+    {
+      "case": "qt-wayland-alloy",
+      "raw_sha256": "5553ded2d1aa2c18e20fc9018dde1047bcaab72fefdbdb468a1f7b5f93b8df32",
+      "qualification": "not_qualified",
+      "checks": {
+        "two_profiles_render": "pass",
+        "fixture_load": "pass",
+        "content_script": "pass",
+        "extension_isolation": "pass",
+        "storage_isolation": "pass",
+        "storage_restart": "not_run",
+        "extension_worker": "pass",
+        "action_popup": "not_run",
+        "extension_storage_restart": "not_run",
+        "popup_storage": "not_run",
+        "sandbox": "not_run",
+        "clean_shutdown": "pass"
+      },
+      "error": "Error: No extension-visible host window",
+      "extension_windows": [],
+      "qt_backend": "wayland",
+      "paint_callback_observed": true
+    },
+    {
+      "case": "qt-x11-alloy",
+      "raw_sha256": "72d9da503455fa04d80ef27ea9f4d8a314dece6f481f08bbbe7be1bb0bf58565",
+      "qualification": "not_qualified",
+      "checks": {
+        "two_profiles_render": "pass",
+        "fixture_load": "pass",
+        "content_script": "pass",
+        "extension_isolation": "pass",
+        "storage_isolation": "pass",
+        "storage_restart": "not_run",
+        "extension_worker": "pass",
+        "action_popup": "not_run",
+        "extension_storage_restart": "not_run",
+        "popup_storage": "not_run",
+        "sandbox": "not_run",
+        "clean_shutdown": "pass"
+      },
+      "error": "Error: No extension-visible host window",
+      "extension_windows": [],
+      "qt_backend": "xcb",
+      "paint_callback_observed": true
+    },
+    {
+      "case": "qt-wayland-sandbox",
+      "raw_sha256": "1bbca64b0a43af99ed12822552719b21e8c9d1dc6e986a45977ed3b0e2ec8286",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "scope": "single-profile sandbox/render diagnostic"
+    },
+    {
+      "case": "qt-x11-sandbox",
+      "raw_sha256": "d1344dbdcb291fbb456e34f287fc77d053bce2ad10882cb5198f04c86f66174b",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "scope": "single-profile sandbox/render diagnostic"
+    }
+  ]
+}
