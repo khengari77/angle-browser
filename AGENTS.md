@@ -2,6 +2,10 @@
 
 Angle independently implements Arc-style desktop workflows. Linux is first; Windows and macOS are targets. Original contributions use MPL-2.0. Read README.md, docs/BROWSER.md, CONTRIBUTING.md and docs/RESEARCH_POLICY.md first.
 
+## Durable reconstruction knowledge
+
+Read docs/reconstruction/CONFIRMED_BEHAVIOR.md before changing Arc-compatible behavior, then consult its linked workflow, source and binary reports. Cite stable claim IDs in PRs. Update the ledger when new evidence confirms, limits or supersedes a claim; preserve source/build applicability and distinguish documentation/static facts from original-app runtime observations. Do not rely on agent conversation history as the factual record.
+
 ## Task workflow
 
 - Work on one issue per branch/PR (`issue-<number>-<description>`). Read dependencies and acceptance criteria. Coordinate a claim with the maintainer; do not assume an unassigned issue grants exclusivity.

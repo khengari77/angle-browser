@@ -1,0 +1,85 @@
+{
+  "format": "angle-persistence-references-v1",
+  "executable_sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+  "auto_analysis": false,
+  "decompilation": false,
+  "sites": [
+    {
+      "address": "0x100f41540",
+      "containing_function": "0x100f41540",
+      "function_name": "FUN_100f41540",
+      "incoming": [
+        {
+          "from": "0x10534064d",
+          "kind": "DATA"
+        }
+      ],
+      "incoming_truncated": false,
+      "outgoing": []
+    },
+    {
+      "address": "0x103373b00",
+      "containing_function": "0x103373b00",
+      "function_name": "FUN_103373b00",
+      "incoming": [
+        {
+          "from": "0x105371f36",
+          "kind": "DATA"
+        }
+      ],
+      "incoming_truncated": false,
+      "outgoing": []
+    },
+    {
+      "address": "0x103374605",
+      "containing_function": "0x103373b00",
+      "function_name": "FUN_103373b00",
+      "incoming": [],
+      "incoming_truncated": false,
+      "outgoing": [
+        {
+          "to": "0x103b8abf2",
+          "kind": "UNCONDITIONAL_CALL",
+          "symbol": "_$s10Foundation11JSONEncoderC6encodeyAA4DataVxKSERzlFTj"
+        }
+      ]
+    },
+    {
+      "address": "0x103374692",
+      "containing_function": "0x103373b00",
+      "function_name": "FUN_103373b00",
+      "incoming": [],
+      "incoming_truncated": false,
+      "outgoing": []
+    },
+    {
+      "address": "0x1033746c7",
+      "containing_function": "0x103373b00",
+      "function_name": "FUN_103373b00",
+      "incoming": [],
+      "incoming_truncated": false,
+      "outgoing": [
+        {
+          "to": "0x103b8b0c0",
+          "kind": "UNCONDITIONAL_CALL",
+          "symbol": "_$s10Foundation3URLV22appendingPathComponent_11isDirectoryACSS_SbtF"
+        }
+      ]
+    },
+    {
+      "address": "0x1033746e1",
+      "containing_function": "0x103373b00",
+      "function_name": "FUN_103373b00",
+      "incoming": [],
+      "incoming_truncated": false,
+      "outgoing": [
+        {
+          "to": "0x103b8b1ec",
+          "kind": "UNCONDITIONAL_CALL",
+          "symbol": "_$s10Foundation4DataV5write2to7optionsyAA3URLV_So20NSDataWritingOptionsVtKF"
+        }
+      ]
+    }
+  ],
+  "limitations": "Only existing Listing and ReferenceManager state queried. Missing references do not establish absence of callers. No argument value-flow or runtime execution observed."
+}
