@@ -78,7 +78,9 @@ ApplicationWindow {
     Layout.fillWidth:true;spacing:6
     Repeater {
      model:workspace.items.filter(x=>x.kind==="favorite"&&x.profile===workspace.currentProfile)
-     Button {required property var modelData;text:modelData.title.slice(0,2);width:52;height:48;onClicked:workspace.select(modelData.id)}
+     Button {required property var modelData;objectName:"favoriteTile-"+modelData.id;text:modelData.title.slice(0,2);width:52;height:48;onClicked:workspace.select(modelData.id)
+      TapHandler {acceptedButtons:Qt.RightButton;onTapped:{itemMenu.item=modelData;itemMenu.popup()}}
+     }
     }
    }
    ComboBox {id:spaceSelect;Layout.fillWidth:true;model:workspace.spaces;textRole:"title";valueRole:"id";currentIndex:workspace.spaces.findIndex(x=>x.id===workspace.currentSpace);onActivated:workspace.selectSpace(currentValue)}
@@ -156,15 +158,15 @@ ApplicationWindow {
    }
   }
  }
- Menu {id:itemMenu;property var item
+ Menu {id:itemMenu;objectName:"itemMenu";property var item
   MenuItem {text:"Pin tab";onTriggered:workspace.pin(itemMenu.item.id)}
   MenuItem {text:"Add to Favorites";onTriggered:workspace.pin(itemMenu.item.id,true)}
-  MenuItem {text:"Back to Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{workspace.select(itemMenu.item.id);root.activate(itemMenu.item.id);if(root.active)root.active.url=itemMenu.item.savedUrl}}
-  MenuItem {text:"Edit Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{pinnedUrlDialog.itemId=itemMenu.item.id;pinnedUrlField.text=itemMenu.item.savedUrl;pinnedUrlDialog.open()}}
+  MenuItem {objectName:"restorePinnedUrlAction";text:"Back to Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{workspace.select(itemMenu.item.id);root.activate(itemMenu.item.id);if(root.active)root.active.url=itemMenu.item.savedUrl}}
+  MenuItem {objectName:"editPinnedUrlAction";text:"Edit Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{pinnedUrlDialog.itemId=itemMenu.item.id;pinnedUrlField.text=itemMenu.item.savedUrl;pinnedUrlDialog.open()}}
   MenuItem {text:"Rename";onTriggered:{renameDialog.itemId=itemMenu.item.id;renameField.text=itemMenu.item.title;renameDialog.open()}}
   MenuItem {text:"Remove";onTriggered:workspace.remove(itemMenu.item.id)}
  }
- Dialog {id:pinnedUrlDialog;property string itemId;anchors.centerIn:parent;title:"Edit Pinned URL";standardButtons:Dialog.Ok|Dialog.Cancel
+ Dialog {id:pinnedUrlDialog;objectName:"pinnedUrlDialog";property string itemId;anchors.centerIn:parent;title:"Edit Pinned URL";standardButtons:Dialog.Ok|Dialog.Cancel
   TextField {id:pinnedUrlField;width:360;placeholderText:"https://example.com"}
   onAccepted:if(!workspace.setPinnedUrl(itemId,pinnedUrlField.text)){pinnedUrlError.open()}
  }
