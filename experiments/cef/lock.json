@@ -1,0 +1,19 @@
+{
+  "cef": "156.0.14+g4fa4ab5+chromium-156.0.8078.48",
+  "cef_revision": "4fa4ab516dacf6c49fc7e6e70d2b7ebce29fa35f",
+  "chromium": "156.0.8078.48",
+  "platform": "linux64",
+  "base_url": "https://cef-builds.spotifycdn.com/",
+  "archives": {
+    "client": {
+      "sha1": "203c3922d61e628c0facf89cfd72c49df1d1fe94",
+      "sha256": "fddcf17b9fa3eb9ff70a863ce349cb3c02a8ddb3112bfdccf21a4e97631fdf92",
+      "size": 331437616
+    },
+    "minimal": {
+      "sha1": "d091c82a8655113a34616c08cb340bf92310298d",
+      "sha256": "4191ac920a91a052eba04afb6ed830d47aed46a3e246c434a2f062c23588dc8a",
+      "size": 331729249
+    }
+  }
+}

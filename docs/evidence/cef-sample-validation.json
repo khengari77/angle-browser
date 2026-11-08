@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-08",
+  "cef": "156.0.14+g4fa4ab5+chromium-156.0.8078.48",
+  "archive": {
+    "sha1": "203c3922d61e628c0facf89cfd72c49df1d1fe94",
+    "sha256": "fddcf17b9fa3eb9ff70a863ce349cb3c02a8ddb3112bfdccf21a4e97631fdf92",
+    "size": 331437616
+  },
+  "host": {
+    "system": "Linux",
+    "architecture": "x86_64",
+    "session": "Hyprland Wayland with XWayland"
+  },
+  "results": [
+    {
+      "backend": "wayland",
+      "style": "chrome",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "backend_evidence": "explicit ozone backend; alternate display environment removed",
+      "x11_session": null,
+      "scope": "single-profile sample; no persistence, popup or embedding claim"
+    },
+    {
+      "backend": "wayland",
+      "style": "alloy",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "backend_evidence": "explicit ozone backend; alternate display environment removed",
+      "x11_session": null,
+      "scope": "single-profile sample; no persistence, popup or embedding claim"
+    },
+    {
+      "backend": "x11",
+      "style": "chrome",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "backend_evidence": "explicit ozone backend; alternate display environment removed",
+      "x11_session": "XWayland on Hyprland",
+      "scope": "single-profile sample; no persistence, popup or embedding claim"
+    },
+    {
+      "backend": "x11",
+      "style": "alloy",
+      "checks": {
+        "render": "pass",
+        "content_script": "pass",
+        "sandbox": "pass"
+      },
+      "backend_evidence": "explicit ozone backend; alternate display environment removed",
+      "x11_session": "XWayland on Hyprland",
+      "scope": "single-profile sample; no persistence, popup or embedding claim"
+    }
+  ]
+}

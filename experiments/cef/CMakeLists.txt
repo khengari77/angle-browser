@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.28)
+project(angle_cef_probe LANGUAGES C CXX)
+set(CMAKE_CXX_STANDARD 20)
+if(NOT CEF_ROOT)
+ message(FATAL_ERROR "Set CEF_ROOT to the matching verified prebuilt SDK")
+endif()
+list(APPEND CMAKE_MODULE_PATH "${CEF_ROOT}/cmake")
+find_package(CEF REQUIRED)
+add_subdirectory("${CEF_LIBCEF_DLL_WRAPPER_PATH}" libcef_dll_wrapper)
+add_executable(angle_cef_probe probe.cpp)
+target_include_directories(angle_cef_probe PRIVATE "${CEF_ROOT}")
+target_link_libraries(angle_cef_probe PRIVATE libcef_dll_wrapper "${CEF_ROOT}/Release/libcef.so" ${CEF_STANDARD_LIBS})
+set_target_properties(angle_cef_probe PROPERTIES BUILD_RPATH "$ORIGIN")
+# ICU and startup resources must also be adjacent to the executable. A shared
+# library RPATH and resources_dir_path alone do not satisfy CEF's ICU lookup.
+file(GLOB CEF_RUNTIME_FILES "${CEF_ROOT}/Release/*" "${CEF_ROOT}/Resources/*")
+foreach(runtime IN LISTS CEF_RUNTIME_FILES)
+ get_filename_component(name "${runtime}" NAME)
+ add_custom_command(TARGET angle_cef_probe POST_BUILD
+   COMMAND ${CMAKE_COMMAND} -E create_symlink "${runtime}" "$<TARGET_FILE_DIR:angle_cef_probe>/${name}")
+endforeach()
