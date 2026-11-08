@@ -120,18 +120,18 @@ ApplicationWindow {
   Item {
    visible:root.sidebarShown; Layout.preferredWidth:6;Layout.fillHeight:true
    MouseArea {
-    anchors.fill:parent;cursorShape:Qt.SizeHorCursor
+    objectName:"sidebarResizeHandle";anchors.fill:parent;cursorShape:Qt.SizeHorCursor
     property real initialX:0
     property real initialWidth:0
     property real proposedWidth:0
     onPressed:mouse=>{
-     initialX=mapToItem(root,mouse.x,mouse.y).x
+     initialX=mapToItem(root.contentItem,mouse.x,mouse.y).x
      initialWidth=root.sidebarWidth
      proposedWidth=initialWidth
     }
     onPositionChanged:mouse=>{
      if(!pressed)return
-     proposedWidth=initialWidth+mapToItem(root,mouse.x,mouse.y).x-initialX
+     proposedWidth=initialWidth+mapToItem(root.contentItem,mouse.x,mouse.y).x-initialX
      root.sidebarWidth=Math.max(180,Math.min(360,proposedWidth))
     }
     onReleased:{if(proposedWidth<120){root.sidebarWidth=initialWidth;root.sidebarShown=false}}
