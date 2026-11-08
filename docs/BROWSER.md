@@ -30,7 +30,7 @@ Installation succeeds; the native probe reports `isLoaded=true`, `isEnabled=fals
 
 Normal browsing keeps extension enablement unavailable to avoid this reproduced crash. `--engine-gate` and the native diagnostic remain explicit test paths. The full engine gate is red. Ubuntu CI is configured but has not been run remotely.
 
-The user selected evaluating prebuilt CEF as the next engine investigation. Qt Quick remains a possible UI layer, subject to embedding feasibility. No CEF compatibility claims have been established yet.
+Prebuilt CEF evaluation now has a [recorded decision](engine/CEF_DECISION.md): Chrome-style standalone tests pass on native Wayland and X11/XWayland with isolated processes and application-managed extension restoration. The Qt off-screen route is not qualified for required action-popup behavior. This is not a production engine migration or a completed alpha.
 
 ## Build and run
 

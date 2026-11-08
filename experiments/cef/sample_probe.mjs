@@ -12,7 +12,7 @@ const root=await mkdtemp(path.join(tmpdir(),'angle-cef-'));
 const server=http.createServer((req,res)=>{res.setHeader('Content-Type','text/html');res.end('<!doctype html><title>Angle engine fixture</title><h1>Owned localhost fixture</h1>')});
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const free=net.createServer();await new Promise(resolve=>free.listen(0,'127.0.0.1',resolve));const port=free.address().port;await new Promise(resolve=>free.close(resolve));
-const args=[`--ozone-platform=${backend}`,`--remote-debugging-port=${port}`,`--user-data-dir=${root}/profile`,`--url=http://localhost:${server.address().port}/`,`--load-extension=${path.resolve('tests/extensions/content-probe')},${path.resolve('tests/extensions/popup-probe')}`];
+const args=[`--probe-root=${root}/profile`,'--single-profile',`--ozone-platform=${backend}`,`--remote-debugging-port=${port}`,`--user-data-dir=${root}/profile`,`--url=http://localhost:${server.address().port}/`,`--load-extension=${path.resolve('tests/extensions/content-probe')},${path.resolve('tests/extensions/popup-probe')}`];
 if(style==='alloy')args.push('--use-alloy-style');
 const env={...process.env,XDG_CONFIG_HOME:root+'/config',XDG_CACHE_HOME:root+'/cache',XDG_DATA_HOME:root+'/data'};
 if(backend==='wayland')delete env.DISPLAY;else delete env.WAYLAND_DISPLAY;
