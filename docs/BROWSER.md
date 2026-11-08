@@ -28,7 +28,7 @@ Enabling a minimal MV3 extension crashes inside Qt WebEngine on this host. The f
 
 Installation succeeds; the native probe reports `isLoaded=true`, `isEnabled=false`, then crashes at the enable operation. These observations do not establish the precise upstream defect or prove that every environment is affected. Raw logs are retained locally under `artifacts/`.
 
-Normal browsing keeps extension enablement unavailable to avoid this reproduced crash. `--engine-gate` and the native diagnostic remain explicit test paths. The full engine gate is red. Ubuntu CI is configured but has not been run remotely.
+Normal browsing keeps extension enablement unavailable to avoid this reproduced crash. `--engine-gate` and the native diagnostic remain explicit test paths. The full engine gate is red. Ubuntu build, workspace and Python CI checks have passed on merged main. QML interaction regression execution is added in issue #12; verify the current run rather than assuming its result.
 
 The user selected evaluating prebuilt CEF as the next engine investigation. Qt Quick remains a possible UI layer, subject to embedding feasibility. No CEF compatibility claims have been established yet.
 

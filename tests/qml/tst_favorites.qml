@@ -42,6 +42,7 @@ Item {
    return null
   }
   function test_rightClickAndLeftClick() {
+   failOnWarning(/.*TypeError.*/)
    let tile=visualChild(app.contentItem,"favoriteTile-fav")
    verify(tile!==null)
    mouseClick(tile,tile.width/2,tile.height/2,Qt.LeftButton)
