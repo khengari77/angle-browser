@@ -17,6 +17,10 @@ ApplicationWindow {
  property bool engineLoaded: active !== null && active.lastLoadSuccess
  property var pages: ({})
  property var active: null
+ // ARC-B001: thresholds are provisional Angle choices, not measured Arc values.
+ property real sidebarWidth: 238
+ property bool sidebarShown: true
+ property string commandProfile: ""
  function activate(id) {
   if (!id) { active=null; return }
   if (!pages[id]) {
@@ -29,13 +33,21 @@ ApplicationWindow {
  }
  Connections {
   target: workspace
-  function onChanged() { root.activate(workspace.selected) }
+  function onChanged() {
+   // ARC-B006: never carry an old profile's query into a new profile.
+   if (root.commandProfile!==workspace.currentProfile) {
+    root.commandProfile=workspace.currentProfile
+    entry.text=""
+    command.replaceCurrent=false
+   }
+   root.activate(workspace.selected)
+  }
   function onPageClosed(id) {if(root.pages[id]) {root.pages[id].destroy();let next=Object.assign({},root.pages);delete next[id];root.pages=next}}
  }
- Component.onCompleted: activate(workspace.selected)
+ Component.onCompleted: {commandProfile=workspace.currentProfile;activate(workspace.selected)}
  Shortcut {sequence:"Ctrl+T";onActivated:{command.replaceCurrent=false;command.open()}}
  Shortcut {sequence:"Ctrl+L";onActivated:{command.replaceCurrent=true;command.open()}}
- Shortcut {sequence:"Ctrl+S";onActivated:sidebar.visible=!sidebar.visible}
+ Shortcut {sequence:"Ctrl+S";onActivated:root.sidebarShown=!root.sidebarShown}
  Shortcut {sequence:"Ctrl+Tab";onActivated:{let tabs=workspace.items.filter(x=>x.kind!=="folder"&&x.profile===workspace.currentProfile&&(x.space===workspace.currentSpace||x.kind==="favorite"));if(tabs.length)workspace.select(tabs[(tabs.findIndex(x=>x.id===workspace.selected)+1)%tabs.length].id)}}
  Shortcut {sequence:"Ctrl+W";onActivated:workspace.close(workspace.selected)}
  Component {
@@ -53,7 +65,7 @@ ApplicationWindow {
  RowLayout {
   anchors.fill:parent; anchors.margins:8; spacing:8
   ColumnLayout {
-   id:sidebar; Layout.minimumWidth:238; Layout.maximumWidth:238; Layout.preferredWidth:238;Layout.fillHeight:true;spacing:8
+   id:sidebar; visible:root.sidebarShown; Layout.minimumWidth:root.sidebarWidth; Layout.maximumWidth:root.sidebarWidth; Layout.preferredWidth:root.sidebarWidth;Layout.fillHeight:true;spacing:8
    RowLayout {
     ToolButton {text:"‹";onClicked:if(root.active)root.active.goBack()}
     ToolButton {text:"›";onClicked:if(root.active)root.active.goForward()}
@@ -83,7 +95,7 @@ ApplicationWindow {
        width:sidebar.width;height:38;radius:8;color:workspace.selected===modelData.id?(root.dark?"#514759":"#fffcfa"):"transparent"
        RowLayout {
         anchors.fill:parent;anchors.margins:6;anchors.leftMargin:6+modelData.depth*12
-        Label {text:modelData.kind==="folder"?"▸":modelData.kind==="pinned"?"◆":"○";color:"#6d6464"}
+        Label {text:modelData.kind==="folder"?(modelData.expanded?"▾":"▸"):modelData.kind==="pinned"?"◆":"○";color:"#6d6464"}
         Label {text:modelData.title;elide:Text.ElideRight;Layout.fillWidth:true;color:root.dark?"#eee7f0":"#302c31"}
         ToolButton {visible:modelData.kind!=="folder";text:"×";onClicked:workspace.close(modelData.id)}
        }
@@ -102,6 +114,28 @@ ApplicationWindow {
    Label {text:workspace.error;visible:text.length>0;wrapMode:Text.Wrap;Layout.fillWidth:true;color:"#962e30"}
    RowLayout {Button {text:"+ Space";onClicked:newSpace.open()} Button {text:"+ Folder";onClicked:workspace.addItem("folder","New Folder")}}
   }
+  // ARC-B001: drag the edge left and release to hide; Ctrl+S reveals it.
+  Item {
+   visible:root.sidebarShown; Layout.preferredWidth:6;Layout.fillHeight:true
+   MouseArea {
+    anchors.fill:parent;cursorShape:Qt.SizeHorCursor
+    property real initialX:0
+    property real initialWidth:0
+    property real proposedWidth:0
+    onPressed:mouse=>{
+     initialX=mapToItem(root,mouse.x,mouse.y).x
+     initialWidth=root.sidebarWidth
+     proposedWidth=initialWidth
+    }
+    onPositionChanged:mouse=>{
+     if(!pressed)return
+     proposedWidth=initialWidth+mapToItem(root,mouse.x,mouse.y).x-initialX
+     root.sidebarWidth=Math.max(180,Math.min(360,proposedWidth))
+    }
+    onReleased:{if(proposedWidth<120){root.sidebarWidth=initialWidth;root.sidebarShown=false}}
+    onCanceled:root.sidebarWidth=initialWidth
+   }
+  }
   Rectangle {
    Layout.minimumWidth:300;Layout.fillWidth:true;Layout.fillHeight:true;color:root.dark?"#211e25":"#ffffff";radius:12;clip:true
    Item {id:content;anchors.fill:parent}
@@ -113,7 +147,7 @@ ApplicationWindow {
   }
  }
  Popup {
-  id:command;property bool replaceCurrent:false;anchors.centerIn:parent;width:600;padding:16;modal:true;focus:true;closePolicy:Popup.CloseOnEscape|Popup.CloseOnPressOutside
+  id:command;property bool replaceCurrent:false;anchors.centerIn:parent;width:Math.min(600,root.width-32);padding:16;modal:false;focus:true;closePolicy:Popup.CloseOnEscape|Popup.CloseOnPressOutside
   onOpened:{entry.text=replaceCurrent&&root.active?root.active.url.toString():"";entry.forceActiveFocus();entry.selectAll()}
   ColumnLayout {anchors.fill:parent
    TextField {id:entry;Layout.fillWidth:true;placeholderText:"Search or enter a URL";onAccepted:{if(command.replaceCurrent&&root.active){let address=workspace.resolveInput(text);if(address)root.active.url=address}else workspace.open(text);command.close()}}
