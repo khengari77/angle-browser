@@ -1,0 +1,482 @@
+{
+  "date": "2026-11-08",
+  "configuration": "see experiments/cef/lock.json",
+  "note": "Separate processes and explicit enabled-path registry for passing Chrome cases; shared-context/no-registry cases are negative controls. Phase-0 restart assertions are not applicable. X11 is XWayland. Raw data stays local.",
+  "cases": [
+    {
+      "case": "wayland-chrome-shared-contexts",
+      "qualification": "not_qualified",
+      "raw_sha256": "4e638b8bd41dcd6068a339a68b4349f692e9b6307425bb810c6dc9026720d9e5",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "failed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "fail",
+            "storage_isolation": "not_run",
+            "storage_restart": "not_run",
+            "extension_worker": "not_run",
+            "action_popup": "not_run",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "not_run",
+            "sandbox": "not_run",
+            "clean_shutdown": "pass"
+          },
+          "error": "Error: extension_isolation failed"
+        }
+      ]
+    },
+    {
+      "case": "wayland-chrome-no-registry",
+      "qualification": "not_qualified",
+      "raw_sha256": "86ab6338d92e9811b041e6aacd2afc259dc7e8c52941d1c12957f692f715a103",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 665319027,
+              "type": "normal",
+              "focused": false
+            }
+          ]
+        },
+        {
+          "repeat": 0,
+          "phase": 1,
+          "status": "failed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "fail",
+            "extension_isolation": "not_run",
+            "storage_isolation": "not_run",
+            "storage_restart": "not_run",
+            "extension_worker": "not_run",
+            "action_popup": "not_run",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "not_run",
+            "sandbox": "not_run",
+            "clean_shutdown": "pass"
+          },
+          "error": "Error: content_script failed"
+        }
+      ]
+    },
+    {
+      "case": "wayland-chrome-processes",
+      "qualification": "standalone_pass",
+      "raw_sha256": "d615284be58caf43b8e8bbcaff27bdad3e39d20e2f708bcf8297807dd9b087e4",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 131151393,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 0,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 131151447,
+              "type": "normal",
+              "focused": false
+            }
+          ]
+        },
+        {
+          "repeat": 1,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 795207819,
+              "type": "normal",
+              "focused": false
+            }
+          ]
+        },
+        {
+          "repeat": 1,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 795207873,
+              "type": "normal",
+              "focused": false
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1724925251,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1724925305,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "x11-chrome-processes",
+      "qualification": "standalone_pass",
+      "raw_sha256": "6d05aae04410a73ae67574970629c98cba7044900964aa6c023f8a4b55e6d76f",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 632636583,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 0,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 632636637,
+              "type": "normal",
+              "focused": false
+            }
+          ]
+        },
+        {
+          "repeat": 1,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1081396061,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 1,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1081396115,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "phase": 0,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1204201938,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        },
+        {
+          "repeat": 2,
+          "phase": 1,
+          "status": "passed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "pass",
+            "extension_worker": "pass",
+            "action_popup": "pass",
+            "extension_storage_restart": "pass",
+            "popup_storage": "pass",
+            "sandbox": "pass",
+            "clean_shutdown": "pass"
+          },
+          "compositor_focus": 0,
+          "extension_windows": [
+            {
+              "id": 1204201992,
+              "type": "normal",
+              "focused": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "wayland-alloy-processes",
+      "qualification": "not_qualified",
+      "raw_sha256": "c8cea3b87a3ca7b16d9d607c3d814bf69d2cf2392dfe2c05d1ce987d3125a234",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "failed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "not_run",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "not_run",
+            "sandbox": "not_run",
+            "clean_shutdown": "pass"
+          },
+          "error": "Error: No extension-visible host window",
+          "extension_windows": []
+        }
+      ]
+    },
+    {
+      "case": "x11-alloy-processes",
+      "qualification": "not_qualified",
+      "raw_sha256": "59c9162b886424e8e9590963e136c36f157ed78fc1c4b13ee5094bf5317fa2cf",
+      "cycles": [
+        {
+          "repeat": 0,
+          "phase": 0,
+          "status": "failed",
+          "checks": {
+            "two_profiles_render": "pass",
+            "fixture_load": "pass",
+            "content_script": "pass",
+            "extension_isolation": "pass",
+            "storage_isolation": "pass",
+            "storage_restart": "not_run",
+            "extension_worker": "pass",
+            "action_popup": "not_run",
+            "extension_storage_restart": "not_run",
+            "popup_storage": "not_run",
+            "sandbox": "not_run",
+            "clean_shutdown": "pass"
+          },
+          "error": "Error: No extension-visible host window",
+          "extension_windows": []
+        }
+      ]
+    }
+  ]
+}

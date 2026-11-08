@@ -7,3 +7,5 @@ The application dynamically links Qt Core, Gui, Qml, Quick, Quick Controls, SQL 
 Dependency source and modifications must be made available as required by each component's license; MPL does not replace these requirements. Development SDK files remain local under `.local-tools`. A distribution must carry its actual dependency version inventory and license files.
 
 The research tools use independently installed REA and Ghidra, which are not required at browser runtime and are not bundled with it.
+
+Experimental CEF probes use prebuilt CEF 156.0.14+g4fa4ab5 and its SDK wrapper, retaining the SDK BSD license and bundled Chromium/third-party notices locally. No CEF binaries or wrapper source are redistributed in this repository. Distribution would require the actual shipped-component inventory and applicable notices/source obligations; MPL does not replace them.
