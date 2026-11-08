@@ -94,6 +94,30 @@ private slots:
     QVERIFY(w.toggleFolder(folder));
     QCOMPARE(w.sidebarItems().size(), 1);
   }
+  void savedPinnedUrl() {
+    QTemporaryDir dir;
+    QString id;
+    {
+      Workspace w(dir.filePath("db"));
+      id = w.addItem("pinned", "Pinned", "https://example.com");
+      QVERIFY(w.navigate(id, "https://example.org/current", "Page"));
+      QVERIFY(w.setPinnedUrl(id, "https://example.net/saved"));
+      auto item = w.items().first().toMap();
+      QCOMPARE(item["url"].toString(), QString("https://example.org/current"));
+      QCOMPARE(item["savedUrl"].toString(), QString("https://example.net/saved"));
+      QVERIFY(!w.setPinnedUrl(id, "javascript:alert(1)"));
+      QVERIFY(!w.setPinnedUrl(id, "relative/path"));
+      auto folder = w.addItem("folder", "Folder");
+      QVERIFY(!w.setPinnedUrl(folder, "https://example.com"));
+      QVERIFY(w.rename(id, "My custom title"));
+      QVERIFY(w.navigate(id, "https://example.org/next", "Different page title"));
+      QCOMPARE(w.items().first().toMap()["title"].toString(), QString("My custom title"));
+    }
+    Workspace restored(dir.filePath("db"));
+    QCOMPARE(restored.items().first().toMap()["savedUrl"].toString(), QString("https://example.net/saved"));
+    QVERIFY(restored.close(id));
+    QCOMPARE(restored.items().first().toMap()["url"].toString(), QString("https://example.net/saved"));
+  }
   void malformed() {
     QString error;
     QVERIFY(!Workspace::validate(QJsonObject{{"version", 99}}, error));
