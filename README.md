@@ -62,3 +62,7 @@ Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md). Pick a
 Angle is the public project name. Existing executable names, internal schema identifiers and local storage paths still use `arcreverse`/`ArcReverse` for compatibility; this publication does not migrate user data. The UI is a development prototype, not a finished alpha. No binary release is published.
 
 [Contributor issue index](docs/ISSUES.md) · [Ready tasks](https://github.com/khengari77/angle-browser/issues?q=is%3Aissue%20is%3Aopen%20label%3Aready)
+
+## Reconstruction knowledge
+
+The durable [confirmed behavior ledger](docs/reconstruction/CONFIRMED_BEHAVIOR.md) records evidence types, stable claim IDs and uncertainty. Read the linked workflow specifications, reference registry and binary dossier before implementing compatibility changes. The current pass expands static findings and vendor-documented scenarios; it does not establish original-app runtime equivalence.

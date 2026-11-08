@@ -1,0 +1,184 @@
+{
+  "format": "angle-reconstruction-sources-v1",
+  "sources": [
+    {
+      "id": "CRA",
+      "url": "https://github.com/VictorKildahl/cra",
+      "commit": "76752571767c3abbcabb23d20540f6242931910f",
+      "retrieved": "2026-11-08",
+      "license_url": "https://github.com/VictorKildahl/cra/blob/76752571767c3abbcabb23d20540f6242931910f/LICENSE",
+      "license_sha256": "a6b64c7444612256030f4400ca1933c0fe5367d646d29984689a7b263a2d4aee",
+      "license_local_path": "artifacts/reference-corpus/CRA-LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "kind": "independent-implementation-not-Arc-proof",
+      "reuse": "file-level review required"
+    },
+    {
+      "id": "ORGANIZER",
+      "url": "https://github.com/Icesource/arc-tab-organizer",
+      "commit": "bb50a2665e15133d730eecf7789b9b51bc152d44",
+      "retrieved": "2026-11-08",
+      "license_url": "https://github.com/Icesource/arc-tab-organizer/blob/bb50a2665e15133d730eecf7789b9b51bc152d44/LICENSE",
+      "license_sha256": "05ce31fc81fd7dfd1b12041f38ea8f47f339b0cbf377a2964e38baa08d1f8f17",
+      "license_local_path": "artifacts/reference-corpus/ORGANIZER-LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "kind": "independent-implementation-not-Arc-proof",
+      "reuse": "file-level review required"
+    },
+    {
+      "id": "EXPORTER",
+      "url": "https://github.com/ivnvxd/arc-export",
+      "commit": "088a888af3467583ab54e6008abf8e0b40c984db",
+      "retrieved": "2026-11-08",
+      "license_url": "https://github.com/ivnvxd/arc-export/blob/088a888af3467583ab54e6008abf8e0b40c984db/LICENSE",
+      "license_sha256": "00aecf7fb52759b08f23c4fa74ccd93598241abc4da6c8609fcc43b1b0a9ce71",
+      "license_local_path": "artifacts/reference-corpus/EXPORTER-LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "kind": "independent-implementation-not-Arc-proof",
+      "reuse": "file-level review required"
+    },
+    {
+      "id": "ZEN",
+      "url": "https://github.com/zen-browser/desktop",
+      "commit": "19ca6106ae61c7ff24092c5162b95fb526b23132",
+      "retrieved": "2026-11-08",
+      "license_url": "https://github.com/zen-browser/desktop/blob/19ca6106ae61c7ff24092c5162b95fb526b23132/LICENSE",
+      "license_sha256": "c76f740d1521b9bed9ca7a04ad526c310493c62621b1341d623b431736533b30",
+      "license_local_path": "artifacts/reference-corpus/ZEN-LICENSE",
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "kind": "independent-implementation-not-Arc-proof",
+      "reuse": "file-level review required"
+    },
+    {
+      "id": "ECHO",
+      "url": "https://github.com/GR0SST/Echo",
+      "commit": "967a827608ce6df93c58b1015f49f4cb8ac9194d",
+      "retrieved": "2026-11-08",
+      "license_url": "https://github.com/GR0SST/Echo/blob/967a827608ce6df93c58b1015f49f4cb8ac9194d/LICENSE",
+      "license_sha256": "e29b616d43ec667ff4f214200ed3d20f21c3f20b0736642a6d6777ab3fc09029",
+      "license_local_path": "artifacts/reference-corpus/ECHO-LICENSE",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "kind": "independent-implementation-not-Arc-proof",
+      "reuse": "reference only; no source modification or redistribution license"
+    },
+    {
+      "id": "ARC-MAC",
+      "url": "https://resources.arc.net/hc/en-us/articles/20498293324823-Arc-for-macOS-2024-2026-Release-Notes",
+      "retrieved": "2026-11-08",
+      "kind": "vendor-documentation",
+      "capture_method": "web tool rendered page",
+      "sha256": null,
+      "snapshot_status": "Direct local HTTP fetch returned 403; no byte-identical page archive or image inventory claimed.",
+      "platform": "macOS",
+      "version_applicability": "Historical release entries and current documentation; not execution of archived binaries."
+    },
+    {
+      "id": "ARC-WIN",
+      "url": "https://resources.arc.net/hc/en-us/articles/22513842649623-Arc-for-Windows-2023-2026-Release-Notes",
+      "retrieved": "2026-11-08",
+      "kind": "vendor-documentation",
+      "capture_method": "web tool rendered page",
+      "sha256": null,
+      "snapshot_status": "Direct local HTTP fetch returned 403; no byte-identical page archive or image inventory claimed.",
+      "platform": "Windows",
+      "version_applicability": "Historical release entries and current documentation; not execution of archived binaries."
+    },
+    {
+      "id": "ARC-MIGRATION",
+      "url": "https://resources.arc.net/hc/en-us/articles/44413129117591-Move-from-Arc-to-Dia",
+      "retrieved": "2026-11-08",
+      "kind": "vendor-documentation",
+      "capture_method": "web tool rendered page",
+      "sha256": null,
+      "snapshot_status": "Direct local HTTP fetch returned 403; no byte-identical page archive or image inventory claimed.",
+      "platform": "desktop",
+      "version_applicability": "Historical release entries and current documentation; not execution of archived binaries."
+    },
+    {
+      "id": "ARC-EXPORT",
+      "url": "https://resources.arc.net/hc/en-us/articles/25583851606039-How-Do-I-Export-My-Data-from-Arc",
+      "retrieved": "2026-11-08",
+      "kind": "vendor-documentation",
+      "capture_method": "web tool rendered page",
+      "sha256": null,
+      "snapshot_status": "Direct local HTTP fetch returned 403; no byte-identical page archive or image inventory claimed.",
+      "platform": "desktop",
+      "version_applicability": "Historical release entries and current documentation; not execution of archived binaries."
+    },
+    {
+      "id": "ARC-HOME",
+      "url": "https://arc.net/",
+      "retrieved": "2026-11-08",
+      "kind": "vendor-public-web-page",
+      "sha256": "b7a44ba4200c0c4cab2dadea82fc187b87cf7c4db37ee86b320cc74ab82036c4",
+      "local_path": "artifacts/reference-corpus/arc-home.html",
+      "notes": "Successful original HTML capture. Farewell page contains decorative Favorites imagery/DOM; not original browser execution. No screenshot-derived dimensions claimed."
+    },
+    {
+      "id": "ARC-IMAGE-WIN",
+      "url": "https://commons.wikimedia.org/wiki/File:Arc_Browser_Windows_Screenshot_(version_1.3.2).png",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Arc_Browser_Windows_Screenshot_%28version_1.3.2%29.png",
+      "author": "Gawi\u0142owski",
+      "uploader_description_date": "2024-06-04",
+      "retrieved": "2026-11-08",
+      "sha256": "6f7fe3d9227c263d64f30485b2c60d0c53d3c824f60997728b63134889d02f72",
+      "size": 147754,
+      "local_path": "artifacts/reference-corpus/arc-windows-1.3.2.png",
+      "dimensions": [
+        1440,
+        853
+      ],
+      "kind": "public-uploader-screenshot-not-our-runtime",
+      "rights": "Uploader states CC0; underlying application/content rights not independently cleared; local reference only",
+      "version_applicability": "Windows 1.3.2 according to file title"
+    },
+    {
+      "id": "ARC-IMAGE-THEME",
+      "url": "https://commons.wikimedia.org/wiki/File:Arc_Browser.gif",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Arc_Browser.gif",
+      "author": "Elfanek",
+      "uploader_description_date": "2023-03-15",
+      "retrieved": "2026-11-08",
+      "sha256": "fdf2ea3b35857c3e131d2d831bcd3f83ce5482e2722d3e6c9681573b3c3b70f5",
+      "size": 5245521,
+      "local_path": "artifacts/reference-corpus/arc-theme.gif",
+      "dimensions": [
+        800,
+        533
+      ],
+      "kind": "public-uploader-screenshot-not-our-runtime",
+      "rights": "Uploader states CC0; underlying application/content rights not independently cleared; local reference only",
+      "version_applicability": "Early Arc theme demonstration; OS/build not established by file metadata"
+    }
+  ]
+}

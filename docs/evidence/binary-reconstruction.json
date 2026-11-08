@@ -1,0 +1,853 @@
+{
+  "format": "angle-binary-reconstruction-v1",
+  "macos": {
+    "sha256": "338e4d317981a7c3c958e606ee1e42ede73f536adcf3478fbe2ee9eeb66d6313",
+    "function_start_reference_ownership": {
+      "load_command": "LC_FUNCTION_STARTS",
+      "table_file_offset": 84356416,
+      "table_size": 362928,
+      "sites": [
+        {
+          "source_address": "0x10534064d",
+          "segment": "__LINKEDIT",
+          "source_file_offset": 84457037,
+          "in_function_starts": true,
+          "record_target": "0x100f41540",
+          "record_size": 1
+        },
+        {
+          "source_address": "0x105371f36",
+          "segment": "__LINKEDIT",
+          "source_file_offset": 84660022,
+          "in_function_starts": true,
+          "record_target": "0x103373b00",
+          "record_size": 1
+        }
+      ],
+      "interpretation": "Importer DATA references point from function-start declarations; they are not code callers or dispatch entries."
+    },
+    "metadata_report_sha256": "c98293eda0d30a2ec78107d342334d3b28243a8d6b416aeab8600fc24d5d250e",
+    "descriptor_count": 11556,
+    "unresolved_names": 3087,
+    "models": [
+      {
+        "context": "BaseModels.SidebarItemContainer",
+        "descriptor_address": "0x1043a02b8",
+        "kind": 0,
+        "fields": [
+          "containerType"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarItemContainer.ContainerType",
+        "descriptor_address": "0x1043a02d4",
+        "kind": 3,
+        "fields": [
+          "topApps",
+          "spaceItems"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarItemData",
+        "descriptor_address": "0x1043a03f4",
+        "kind": 2,
+        "fields": [
+          "tab",
+          "list",
+          "arcDocument",
+          "easel",
+          "itemContainer",
+          "welcomeToArc",
+          "splitView",
+          "sharedObject",
+          "instantLinks",
+          "tabGroup"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarContainer",
+        "descriptor_address": "0x1043a11b8",
+        "kind": 0,
+        "fields": [
+          "items",
+          "spaces",
+          "topAppsContainerIDs"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarContainerType",
+        "descriptor_address": "0x1043a1244",
+        "kind": 3,
+        "fields": [
+          "incognito",
+          "littleBrowser",
+          "standalone",
+          "global"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarItem",
+        "descriptor_address": "0x1043a17d0",
+        "kind": 0,
+        "fields": [
+          "id",
+          "title",
+          "childrenIds",
+          "parentID",
+          "data",
+          "createdAt",
+          "isUnread",
+          "originatingDevice"
+        ]
+      },
+      {
+        "context": "BaseModels.SidebarItemDictionaryCoding",
+        "descriptor_address": "0x1043a196c",
+        "kind": 0,
+        "fields": [
+          "dictionary"
+        ]
+      },
+      {
+        "context": "BaseModels.SpaceModel",
+        "descriptor_address": "0x1043a1b60",
+        "kind": 0,
+        "fields": [
+          "id",
+          "title",
+          "containerIDs",
+          "customInfo",
+          "profile"
+        ]
+      },
+      {
+        "context": "BaseModels.SpaceModel.ContainerType",
+        "descriptor_address": "0x1043a1bac",
+        "kind": 2,
+        "fields": [
+          "unpinned",
+          "pinned"
+        ]
+      },
+      {
+        "context": "BaseModels.SpaceModel.ContainerType.UnpinnedContainerType",
+        "descriptor_address": "0x1043a1bd4",
+        "kind": 2,
+        "fields": [
+          "desktop",
+          "shared"
+        ]
+      },
+      {
+        "context": "BaseModels.SpaceModel.CustomInfo",
+        "descriptor_address": "0x1043a1bfc",
+        "kind": 0,
+        "fields": [
+          "iconType",
+          "windowTheme"
+        ]
+      },
+      {
+        "context": "BaseModels.SpaceModel.CodingKeys",
+        "descriptor_address": "0x1043a1cd8",
+        "kind": 2,
+        "fields": [
+          "id",
+          "title",
+          "customInfo",
+          "profile",
+          "containerIDs",
+          "legacyContainerIDs"
+        ]
+      },
+      {
+        "context": "SidebarDataStore.AppSidebarReducerState",
+        "descriptor_address": "0x1043ca6ac",
+        "kind": 0,
+        "fields": [
+          "containers"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarSelectionOptions.Action",
+        "descriptor_address": "0x1043ee248",
+        "kind": 2,
+        "fields": [
+          "navigateToURL",
+          "openURL",
+          "openBrowseForMe",
+          "openBrowseForMePip",
+          "openTab",
+          "executeTypeTravel",
+          "executeInstantLinksQuery",
+          "executeInstantLinksIntentQuery"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarViewState",
+        "descriptor_address": "0x1043ee2b8",
+        "kind": 0,
+        "fields": [
+          "query",
+          "destination",
+          "presentation",
+          "suggestionsOutput",
+          "initialInput",
+          "currentHighlightedResultIndex",
+          "beginEditPolicy",
+          "windowID",
+          "isCentered",
+          "borderDisplayType",
+          "trailingAccessoryType",
+          "tidyTabTitles",
+          "searchSuggestionPrivacyBannerIsVisible",
+          "semanticColorPalette",
+          "primaryColorPalette",
+          "isFirstSearchOfVisibleLifecycle",
+          "browserContextID",
+          "appearance",
+          "typeTravelContext",
+          "postScopedSearchQuery",
+          "scopedSearchViewState",
+          "isContentPanelThemed",
+          "cornerRadius",
+          "allowTextBasedSizing",
+          "currentSecureContext",
+          "newDefaultBrowserPromptType",
+          "useResetInsteadOfDiffingForSuggestions",
+          "scrollViewEnabled"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarDelegateAction",
+        "descriptor_address": "0x1043eeb00",
+        "kind": 2,
+        "fields": [
+          "onDidSelectSuggestion",
+          "onDidAttemptToCopyCommandBarText",
+          "onDidCopyCurrentSuggestionURLShortcut",
+          "onDidUpdateObservableOutputs",
+          "onDidClickDefaultBrowserPromptButton",
+          "onDidReturn",
+          "onDidRequestClose",
+          "onDidRequestSearchSuggestionsPrivacySettings",
+          "onDidSelectSiteSearchManageSettings",
+          "onDidSelectSiteSearchLearnMore",
+          "onKeyboardUp",
+          "onKeyboardDown",
+          "onDidClickDismissDefaultBrowserPrompt"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBar.Action",
+        "descriptor_address": "0x1043eec04",
+        "kind": 2,
+        "fields": [
+          "updateQuery",
+          "updateSearchOutput",
+          "_onSelectSuggestion",
+          "_onKeyboardReturn",
+          "onAttemptToCopyCommandBarText",
+          "onCopyCurrentSuggestionURLShortcut",
+          "onTabKeyPressed",
+          "onBackspacePressed",
+          "onDeleteSuggestion",
+          "onDidClickDefaultBrowserPromptButton",
+          "siteSearch",
+          "onHighlightedResultIndexChanged",
+          "searchSuggestionsPrivacy",
+          "addSearchEngine",
+          "onInputsUpdated",
+          "onKeyboardUp",
+          "onKeyboardDown",
+          "onKeyboardLeft",
+          "onKeyboardRight",
+          "onTrailingAccessoryPressed",
+          "onEscapePressed",
+          "onRequestClose",
+          "onDidClickDismissDefaultBrowserPrompt",
+          "onASEConfigurationUpdated",
+          "setup",
+          "teardown",
+          "platform"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarSelectionFlags",
+        "descriptor_address": "0x1043eef00",
+        "kind": 0,
+        "fields": [
+          "rawValue"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarPresentation",
+        "descriptor_address": "0x1043eef74",
+        "kind": 2,
+        "fields": [
+          "activeNoQuery",
+          "activeWithQuery"
+        ]
+      },
+      {
+        "context": "CommandBar.TypeLetterInCommandBarStateMachine.Event",
+        "descriptor_address": "0x1043ef008",
+        "kind": 2,
+        "fields": [
+          "newLetterTyped",
+          "allResultsCollected"
+        ]
+      },
+      {
+        "context": "CommandBar.TypeLetterInCommandBarStateMachine.State",
+        "descriptor_address": "0x1043ef030",
+        "kind": 2,
+        "fields": [
+          "noTypingInProgress",
+          "letterTyped"
+        ]
+      },
+      {
+        "context": "CommandBar.TypeLetterInCommandBarStateMachine.Transition",
+        "descriptor_address": "0x1043ef058",
+        "kind": 0,
+        "fields": [
+          "newState",
+          "sideEffect"
+        ]
+      },
+      {
+        "context": "CommandBar.CommandBarState",
+        "descriptor_address": "0x1043ef2c8",
+        "kind": 0,
+        "fields": [
+          "inputs",
+          "destinationType",
+          "displayInfo",
+          "query",
+          "searchOutput",
+          "pendingSelection",
+          "instanceID",
+          "windowID",
+          "isFirstSearchOfVisibleLifecycle",
+          "scopedSearchType",
+          "scopedSearchColor",
+          "postScopedSearchRestoration",
+          "activeSearchEngines",
+          "siteSearchSpaceTriggerEnabled",
+          "pendingWindowContent",
+          "entryPoint",
+          "currentHighlightedResultIndex",
+          "shouldDisplayCloseAccessory",
+          "searchSuggestionPrivacyState",
+          "featureFlags"
+        ]
+      },
+      {
+        "context": "StorableSidebar.StorableSidebar",
+        "descriptor_address": "0x1043fd144",
+        "kind": 0,
+        "fields": [
+          "version",
+          "sidebar",
+          "sidebarSyncState",
+          "firebaseSyncState"
+        ]
+      },
+      {
+        "context": "SharedWindowFeature.SidebarItemHoveredState",
+        "descriptor_address": "0x104402fa8",
+        "kind": 0,
+        "fields": [
+          "metadata",
+          "itemType",
+          "previewType"
+        ]
+      }
+    ],
+    "missing_selected_contexts": []
+  },
+  "limitations": [
+    "Compiler field declarations do not establish encoded JSON keys, values, defaults, emitted cases or runtime behavior.",
+    "Cached parser coverage remains incomplete; metadata names are not recovered function implementations.",
+    "PE section declarations and exact string presence do not establish code paths or shared serialization.",
+    "Package hashes identify the inspected artifacts, not their signature authenticity."
+  ],
+  "windows": {
+    "package_sha256": "b45d110aad915c82a042782b0f3dae126787107727bb44e86ad733d2479196b5",
+    "member_count": 1441,
+    "inspected_binaries": [
+      {
+        "member": "Arc.exe",
+        "sha256": "27bc7728fd355d9f700e37d80536aeb39c00bb2b9fa6a521efad8de6b56f644a",
+        "size": 3409304,
+        "pe": {
+          "machine": "0x8664",
+          "optional_magic": "0x20b",
+          "coff_timestamp": 1792534043,
+          "characteristics": "0x22",
+          "sections": [
+            {
+              "name": ".text",
+              "rva": "0x1000",
+              "virtual_size": 2897037,
+              "file_offset": 1024,
+              "file_size": 2897408
+            },
+            {
+              "name": ".rdata",
+              "rva": "0x2c5000",
+              "virtual_size": 337304,
+              "file_offset": 2898432,
+              "file_size": 337408
+            },
+            {
+              "name": ".data",
+              "rva": "0x318000",
+              "virtual_size": 148480,
+              "file_offset": 3235840,
+              "file_size": 74240
+            },
+            {
+              "name": ".pdata",
+              "rva": "0x33d000",
+              "virtual_size": 70392,
+              "file_offset": 3310080,
+              "file_size": 70656
+            },
+            {
+              "name": ".fptable",
+              "rva": "0x34f000",
+              "virtual_size": 256,
+              "file_offset": 3380736,
+              "file_size": 512
+            },
+            {
+              "name": ".tls",
+              "rva": "0x350000",
+              "virtual_size": 690,
+              "file_offset": 3381248,
+              "file_size": 1024
+            },
+            {
+              "name": "_RDATA",
+              "rva": "0x351000",
+              "virtual_size": 500,
+              "file_offset": 3382272,
+              "file_size": 512
+            },
+            {
+              "name": "malloc_h",
+              "rva": "0x352000",
+              "virtual_size": 2244,
+              "file_offset": 3382784,
+              "file_size": 2560
+            },
+            {
+              "name": ".reloc",
+              "rva": "0x353000",
+              "virtual_size": 11560,
+              "file_offset": 3385344,
+              "file_size": 11776
+            }
+          ]
+        },
+        "string_seed_presence": [
+          {
+            "seed": "StorableSidebar.json",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "StorableSidebar.json",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "savedURL",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "savedURL",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "currentURL",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "currentURL",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "childrenIds",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "childrenIds",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "parentID",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "parentID",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "newContainerIDs",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "newContainerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "containerIDs",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "containerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "topAppsContainerIDs",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "topAppsContainerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          }
+        ]
+      },
+      {
+        "member": "Arc.dll",
+        "sha256": "719aeb366654c80ba7244b37e145ec6858489e30843aed8f5d02d7604bd058b6",
+        "size": 82866584,
+        "pe": {
+          "machine": "0x8664",
+          "optional_magic": "0x20b",
+          "coff_timestamp": 1792616652,
+          "characteristics": "0x2022",
+          "sections": [
+            {
+              "name": ".text",
+              "rva": "0x1000",
+              "virtual_size": 52688998,
+              "file_offset": 1536,
+              "file_size": 52689408
+            },
+            {
+              "name": ".rdata",
+              "rva": "0x3241000",
+              "virtual_size": 16150676,
+              "file_offset": 52690944,
+              "file_size": 16151040
+            },
+            {
+              "name": ".data",
+              "rva": "0x41a9000",
+              "virtual_size": 7996808,
+              "file_offset": 68841984,
+              "file_size": 5159936
+            },
+            {
+              "name": ".pdata",
+              "rva": "0x494a000",
+              "virtual_size": 2369508,
+              "file_offset": 74001920,
+              "file_size": 2369536
+            },
+            {
+              "name": ".detourc",
+              "rva": "0x4b8d000",
+              "virtual_size": 8752,
+              "file_offset": 76371456,
+              "file_size": 9216
+            },
+            {
+              "name": ".detourd",
+              "rva": "0x4b90000",
+              "virtual_size": 16,
+              "file_offset": 76380672,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5acfn",
+              "rva": "0x4b91000",
+              "virtual_size": 16,
+              "file_offset": 76381184,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5asty",
+              "rva": "0x4b92000",
+              "virtual_size": 388632,
+              "file_offset": 76381696,
+              "file_size": 389120
+            },
+            {
+              "name": ".sw5bltn",
+              "rva": "0x4bf1000",
+              "virtual_size": 141536,
+              "file_offset": 76770816,
+              "file_size": 141824
+            },
+            {
+              "name": ".sw5cptr",
+              "rva": "0x4c14000",
+              "virtual_size": 212448,
+              "file_offset": 76912640,
+              "file_size": 212480
+            },
+            {
+              "name": ".sw5flmd",
+              "rva": "0x4c48000",
+              "virtual_size": 1193552,
+              "file_offset": 77125120,
+              "file_size": 1193984
+            },
+            {
+              "name": ".sw5hash",
+              "rva": "0x4d6c000",
+              "virtual_size": 45664,
+              "file_offset": 78319104,
+              "file_size": 46080
+            },
+            {
+              "name": ".sw5mpen",
+              "rva": "0x4d78000",
+              "virtual_size": 15228,
+              "file_offset": 78365184,
+              "file_size": 15360
+            },
+            {
+              "name": ".sw5prt",
+              "rva": "0x4d7c000",
+              "virtual_size": 2432,
+              "file_offset": 78380544,
+              "file_size": 2560
+            },
+            {
+              "name": ".sw5prtc",
+              "rva": "0x4d7d000",
+              "virtual_size": 143364,
+              "file_offset": 78383104,
+              "file_size": 143872
+            },
+            {
+              "name": ".sw5ratt",
+              "rva": "0x4da1000",
+              "virtual_size": 16,
+              "file_offset": 78526976,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5repl",
+              "rva": "0x4da2000",
+              "virtual_size": 16,
+              "file_offset": 78527488,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5reps",
+              "rva": "0x4da3000",
+              "virtual_size": 16,
+              "file_offset": 78528000,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5rfst",
+              "rva": "0x4da4000",
+              "virtual_size": 1175307,
+              "file_offset": 78528512,
+              "file_size": 1175552
+            },
+            {
+              "name": ".sw5test",
+              "rva": "0x4ec3000",
+              "virtual_size": 16,
+              "file_offset": 79704064,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5tym2",
+              "rva": "0x4ec4000",
+              "virtual_size": 12,
+              "file_offset": 79704576,
+              "file_size": 512
+            },
+            {
+              "name": ".sw5tymd",
+              "rva": "0x4ec5000",
+              "virtual_size": 168040,
+              "file_offset": 79705088,
+              "file_size": 168448
+            },
+            {
+              "name": ".sw5tyrf",
+              "rva": "0x4eef000",
+              "virtual_size": 1561862,
+              "file_offset": 79873536,
+              "file_size": 1562112
+            },
+            {
+              "name": ".tls",
+              "rva": "0x506d000",
+              "virtual_size": 521,
+              "file_offset": 81435648,
+              "file_size": 1024
+            },
+            {
+              "name": ".rsrc",
+              "rva": "0x506e000",
+              "virtual_size": 776,
+              "file_offset": 81436672,
+              "file_size": 1024
+            },
+            {
+              "name": ".reloc",
+              "rva": "0x506f000",
+              "virtual_size": 1416572,
+              "file_offset": 81437696,
+              "file_size": 1416704
+            }
+          ]
+        },
+        "string_seed_presence": [
+          {
+            "seed": "StorableSidebar.json",
+            "encoding": "utf-8",
+            "count": 2,
+            "first_file_offset": 52732256
+          },
+          {
+            "seed": "StorableSidebar.json",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "savedURL",
+            "encoding": "utf-8",
+            "count": 5,
+            "first_file_offset": 9291199
+          },
+          {
+            "seed": "savedURL",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "currentURL",
+            "encoding": "utf-8",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "currentURL",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "childrenIds",
+            "encoding": "utf-8",
+            "count": 2,
+            "first_file_offset": 61731910
+          },
+          {
+            "seed": "childrenIds",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "parentID",
+            "encoding": "utf-8",
+            "count": 12,
+            "first_file_offset": 734843
+          },
+          {
+            "seed": "parentID",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "newContainerIDs",
+            "encoding": "utf-8",
+            "count": 1,
+            "first_file_offset": 59088876
+          },
+          {
+            "seed": "newContainerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "containerIDs",
+            "encoding": "utf-8",
+            "count": 2,
+            "first_file_offset": 59088892
+          },
+          {
+            "seed": "containerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          },
+          {
+            "seed": "topAppsContainerIDs",
+            "encoding": "utf-8",
+            "count": 2,
+            "first_file_offset": 58756576
+          },
+          {
+            "seed": "topAppsContainerIDs",
+            "encoding": "utf-16le",
+            "count": 0,
+            "first_file_offset": null
+          }
+        ]
+      }
+    ],
+    "selected_resource_members": [
+      "resources.pri",
+      "AppxManifest.xml"
+    ]
+  }
+}
