@@ -12,6 +12,9 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 
+MAX_DEPTH = 128
+
+
 class Unsupported(ValueError):
     pass
 
@@ -46,6 +49,7 @@ def export(document):
         found = True
         spaces = pairs(container['spaces'], 'spaces')
         items = pairs(container['items'], 'items')
+        child_sets = {}
         for key, item in items.items():
             if not isinstance(item, dict) or item.get('id') != key:
                 raise Unsupported('Item ID does not match dictionary key')
@@ -54,6 +58,7 @@ def export(document):
                 raise Unsupported('Invalid child list')
             if any(x not in items for x in children):
                 raise Unsupported('Missing child reference')
+            child_sets[key] = set(children)
             parent = item.get('parentID')
             if parent is not None and (not isinstance(parent, str) or parent not in items):
                 raise Unsupported('Missing parent reference')
@@ -65,15 +70,19 @@ def export(document):
                 if cursor in visited:
                     raise Unsupported('Folder cycle')
                 visited.add(cursor)
+                # tree() starts at section children: allow section root plus
+                # the first child before counting its MAX_DEPTH descendants.
+                if len(visited) > MAX_DEPTH + 2:
+                    raise Unsupported('Workspace nesting exceeds 128')
                 cursor = items[cursor].get('parentID')
             for child in item.get('childrenIds', []):
                 if items[child].get('parentID') != key:
                     raise Unsupported('Inconsistent parent/child relation')
             parent = item.get('parentID')
-            if parent is not None and key not in items[parent].get('childrenIds', []):
+            if parent is not None and key not in child_sets[parent]:
                 raise Unsupported('Parent omits child; ordering is ambiguous')
         def tree(key, depth=0):
-            if depth > 128:
+            if depth > MAX_DEPTH:
                 raise Unsupported('Workspace nesting exceeds 128')
             item = items[key]
             data = item.get('data')

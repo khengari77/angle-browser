@@ -68,3 +68,41 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(source.read_bytes(), original)
             self.assertEqual(subprocess.run([*command[:-1], str(source)], capture_output=True).returncode, 2)
             self.assertEqual(source.read_bytes(), original)
+
+
+class DepthTests(unittest.TestCase):
+    def chain(self, count, reverse=False):
+        records = []
+        for i in range(count):
+            records.append((str(i), {'id': str(i),
+                'parentID': str(i-1) if i else None,
+                'childrenIds': [str(i+1)] if i+1<count else [],
+                'data': {'list': {}} if i else {'itemContainer': {}}}))
+        if reverse:
+            records.reverse()
+        return {'version': 1, 'sidebar': {'containers': [{
+            'spaces': ['space', {'containerIDs': ['pinned', '0']}],
+            'items': [v for pair in records for v in pair]}]}}
+
+    def test_depth_boundary(self):
+        self.assertEqual(len(export(self.chain(130))['spaces']), 1)
+        with self.assertRaisesRegex(Unsupported, 'nesting'):
+            export(self.chain(131))
+
+    def test_deep_ancestors_rejected_with_bounded_work(self):
+        # Deterministic operation budget, independent of machine speed. Abort
+        # early if ancestor validation regresses to walking full deep chains.
+        for reverse in (False, True):
+            value = self.chain(8000, reverse)
+            reads = [0]
+            class Counted(dict):
+                def get(self, key, default=None):
+                    if key == 'parentID':
+                        reads[0] += 1
+                        if reads[0] > 25000:
+                            raise AssertionError('Unbounded ancestor traversal')
+                    return super().get(key, default)
+            items = value['sidebar']['containers'][0]['items']
+            items[1::2] = [Counted(item) for item in items[1::2]]
+            with self.assertRaisesRegex(Unsupported, 'nesting'):
+                export(value)
