@@ -36,6 +36,7 @@ public:
   Q_INVOKABLE bool close(QString id);
   Q_INVOKABLE bool remove(QString id);
   Q_INVOKABLE bool pin(QString id, bool favorite = false);
+  Q_INVOKABLE bool setPinnedUrl(QString id, QString url);
   Q_INVOKABLE bool navigate(QString id, QString url, QString title);
   Q_INVOKABLE QString open(QString input);
   Q_INVOKABLE QString resolveInput(QString input);

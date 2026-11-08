@@ -125,9 +125,16 @@ ApplicationWindow {
  Menu {id:itemMenu;property var item
   MenuItem {text:"Pin tab";onTriggered:workspace.pin(itemMenu.item.id)}
   MenuItem {text:"Add to Favorites";onTriggered:workspace.pin(itemMenu.item.id,true)}
+  MenuItem {text:"Back to Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{workspace.select(itemMenu.item.id);root.activate(itemMenu.item.id);if(root.active)root.active.url=itemMenu.item.savedUrl}}
+  MenuItem {text:"Edit Pinned URL";visible:!!itemMenu.item&&(itemMenu.item.kind==="pinned"||itemMenu.item.kind==="favorite");onTriggered:{pinnedUrlDialog.itemId=itemMenu.item.id;pinnedUrlField.text=itemMenu.item.savedUrl;pinnedUrlDialog.open()}}
   MenuItem {text:"Rename";onTriggered:{renameDialog.itemId=itemMenu.item.id;renameField.text=itemMenu.item.title;renameDialog.open()}}
   MenuItem {text:"Remove";onTriggered:workspace.remove(itemMenu.item.id)}
  }
+ Dialog {id:pinnedUrlDialog;property string itemId;anchors.centerIn:parent;title:"Edit Pinned URL";standardButtons:Dialog.Ok|Dialog.Cancel
+  TextField {id:pinnedUrlField;width:360;placeholderText:"https://example.com"}
+  onAccepted:if(!workspace.setPinnedUrl(itemId,pinnedUrlField.text)){pinnedUrlError.open()}
+ }
+ Dialog {id:pinnedUrlError;anchors.centerIn:parent;title:"Invalid pinned URL";standardButtons:Dialog.Ok;Label {text:"Enter an absolute HTTP or HTTPS URL."}}
  Dialog {id:renameDialog;property string itemId;anchors.centerIn:parent;title:"Rename";standardButtons:Dialog.Ok|Dialog.Cancel;TextField {id:renameField}onAccepted:workspace.rename(itemId,renameField.text)}
  Dialog {id:newSpace;anchors.centerIn:parent;title:"Create a Space";standardButtons:Dialog.Ok|Dialog.Cancel
   ColumnLayout {TextField {id:spaceTitle;placeholderText:"Space name"}ComboBox {id:profileSelect;model:workspace.profiles;textRole:"title";valueRole:"id"}}

@@ -353,6 +353,26 @@ bool Workspace::pin(QString id, bool favorite) {
   d["items"] = a;
   return commit(d);
 }
+// ARC-B008: saved URL is distinct from the currently navigated URL.
+bool Workspace::setPinnedUrl(QString id, QString url) {
+  QUrl address(url.trimmed());
+  if (!address.isValid() || address.host().isEmpty() ||
+      (address.scheme() != "http" && address.scheme() != "https"))
+    return false;
+  auto d = doc_;
+  auto a = d["items"].toArray();
+  int i = find(a, id);
+  if (i < 0)
+    return false;
+  auto o = a[i].toObject();
+  if (o["kind"] != "pinned" && o["kind"] != "favorite")
+    return false;
+  o["savedUrl"] = address.toString();
+  a[i] = o;
+  d["items"] = a;
+  return commit(d);
+}
+
 bool Workspace::navigate(QString id, QString url, QString title) {
   auto d = doc_;
   auto a = d["items"].toArray();
